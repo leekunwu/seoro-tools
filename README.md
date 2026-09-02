@@ -160,6 +160,46 @@ serviceName: {
 
 `theme`을 생략하면 `type`에 따라 기본 카드 테마가 자동 적용됩니다.
 
+## Add an SVG Logo
+
+기본 카드에는 서비스명만 표시합니다. 서비스별 SVG 로고를 적용하려면
+저장소에 아래 폴더 구조를 만든 뒤 SVG 파일을 추가합니다.
+
+```text
+assets/
+└── logos/
+    ├── spotify.svg
+    ├── melon.svg
+    ├── fuga.svg
+    └── ...
+```
+
+이후 `app.js`의 해당 리소스에 `logo` 필드를 추가합니다.
+
+```js
+{
+  id: "spotify",
+  name: "Spotify",
+  logo: "./assets/logos/spotify.svg",
+  description: "Spotify 검색, 아티스트 및 릴리스 모니터링",
+  category: "Global DSP",
+  type: "DSP",
+  url: "https://open.spotify.com/",
+  pinned: true,
+}
+```
+
+현재 카드 UI는 SVG 로고를 받을 준비가 된 구조이며, SVG 파일이 없는 항목은
+서비스명만 표시합니다.
+
+SVG를 추가할 때에는 다음을 확인합니다.
+
+- 로고 파일명은 영문 소문자와 하이픈을 사용합니다.
+- `viewBox`가 포함된 SVG를 사용합니다.
+- 불필요한 배경 사각형이나 원형 프레임은 SVG 안에 넣지 않습니다.
+- 브랜드 가이드와 사용 권한을 확인합니다.
+- SVG 파일을 추가한 뒤에는 카드의 로고 크기와 모바일 표시를 확인합니다.
+
 ### Field Reference
 
 | Field | Required | Description |
