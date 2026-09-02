@@ -515,18 +515,33 @@ function createCard(resource) {
   applyTheme(card, resource.type);
 
   card.href = resource.url;
+  card.dataset.type = resource.type;
   card.setAttribute("aria-label", `${resource.name} 열기 (새 탭)`);
+
+  name.textContent = resource.name;
+  description.textContent = resource.description;
 
   if (resource.logo) {
     logo.src = resource.logo;
     logo.hidden = false;
+
+    logo.addEventListener(
+      "error",
+      () => {
+        logo.removeAttribute("src");
+        logo.hidden = true;
+
+        if (resource.icon) {
+          icon.textContent = resource.icon;
+          icon.hidden = false;
+        }
+      },
+      { once: true },
+    );
   } else if (resource.icon) {
     icon.textContent = resource.icon;
     icon.hidden = false;
   }
-
-  name.textContent = resource.name;
-  description.textContent = resource.description;
 
   return fragment;
 }
