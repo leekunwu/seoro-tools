@@ -147,26 +147,6 @@ const resources = [
     pinned: false,
   },
   {
-  id: "yg-plus-clas",
-  name: "YG PLUS CLAS",
-  description: "YG PLUS CLAS 파트너 포털",
-  category: "Partner Systems",
-  type: "PARTNER",
-  status: "LOGIN",
-  url: "http://clas.ygplus.com",
-  pinned: false,
-  },
-  {
-    id: "sony-music-artist-portal",
-    name: "Sony Music Entertainment Artist Portal",
-    description: "Sony Music Entertainment 아티스트·파트너 포털",
-    category: "Partner Systems",
-    type: "PARTNER",
-    status: "LOGIN",
-    url: "https://sme-artistportal.com/login?returnUrl=%2F",
-    pinned: false,
-  },
-  {
     id: "flo",
     name: "FLO",
     description: "FLO 검색 및 국내 DSP 모니터링",
@@ -227,6 +207,26 @@ const resources = [
     status: "LOGIN",
     url: "https://artists.spotify.com/home",
     pinned: true,
+  },
+  {
+    id: "yg-plus-clas",
+    name: "YG PLUS CLAS",
+    description: "YG PLUS CLAS 파트너 포털",
+    category: "Partner Systems",
+    type: "PARTNER",
+    status: "LOGIN",
+    url: "http://clas.ygplus.com",
+    pinned: false,
+  },
+  {
+    id: "sony-music-artist-portal",
+    name: "Sony Music Entertainment Artist Portal",
+    description: "Sony Music Entertainment 아티스트·파트너 포털",
+    category: "Partner Systems",
+    type: "PARTNER",
+    status: "LOGIN",
+    url: "https://sme-artistportal.com/login?returnUrl=%2F",
+    pinned: false,
   },
   {
     id: "flo-mcp",
@@ -351,6 +351,73 @@ const categoryOrder = [
   "Work Utilities",
 ];
 
+const cardThemes = {
+  "SEORO TOOL": {
+    background: "#f1f3fb",
+    border: "#ccd5f2",
+    accent: "#405ba8",
+    badgeBackground: "#dde4f8",
+    badgeText: "#294381",
+    buttonBackground: "#405ba8",
+    buttonText: "#ffffff",
+  },
+  DSP: {
+    background: "#f0f6f1",
+    border: "#c9ddcd",
+    accent: "#2f7d4b",
+    badgeBackground: "#dceee0",
+    badgeText: "#24623b",
+    buttonBackground: "#2f7d4b",
+    buttonText: "#ffffff",
+  },
+  CATALOG: {
+    background: "#fdf6ea",
+    border: "#ead8b5",
+    accent: "#9a681f",
+    badgeBackground: "#f5e7ca",
+    badgeText: "#7b5013",
+    buttonBackground: "#9a681f",
+    buttonText: "#ffffff",
+  },
+  PARTNER: {
+    background: "#f6f1f7",
+    border: "#dfcde2",
+    accent: "#7d4f8b",
+    badgeBackground: "#ebdced",
+    badgeText: "#633a70",
+    buttonBackground: "#7d4f8b",
+    buttonText: "#ffffff",
+  },
+  RIGHTS: {
+    background: "#f8f2ee",
+    border: "#e8d4c7",
+    accent: "#9a5b35",
+    badgeBackground: "#f0dfd3",
+    badgeText: "#7a4425",
+    buttonBackground: "#9a5b35",
+    buttonText: "#ffffff",
+  },
+  UTILITY: {
+    background: "#f3f4f5",
+    border: "#d8dde0",
+    accent: "#55616a",
+    badgeBackground: "#e7ebed",
+    badgeText: "#424c53",
+    buttonBackground: "#55616a",
+    buttonText: "#ffffff",
+  },
+};
+
+const defaultCardTheme = {
+  background: "#ffffff",
+  border: "#d8d8d2",
+  accent: "#171717",
+  badgeBackground: "#ebebe7",
+  badgeText: "#686866",
+  buttonBackground: "#171717",
+  buttonText: "#ffffff",
+};
+
 const state = {
   activeCategory: "All",
   searchTerm: "",
@@ -400,15 +467,29 @@ function getFilteredResources() {
   });
 }
 
-function createResourceCard(resource) {
-  const card = elements.cardTemplate.content.cloneNode(true);
+function applyCardTheme(cardElement, type) {
+  const theme = cardThemes[type] ?? defaultCardTheme;
 
-  const badge = card.querySelector(".resource-badge");
-  const status = card.querySelector(".resource-status");
-  const name = card.querySelector(".resource-name");
-  const description = card.querySelector(".resource-description");
-  const primaryLink = card.querySelector(".primary-link");
-  const secondaryLink = card.querySelector(".secondary-link");
+  cardElement.style.setProperty("--card-bg", theme.background);
+  cardElement.style.setProperty("--card-border", theme.border);
+  cardElement.style.setProperty("--card-accent", theme.accent);
+  cardElement.style.setProperty("--card-badge-bg", theme.badgeBackground);
+  cardElement.style.setProperty("--card-badge-text", theme.badgeText);
+  cardElement.style.setProperty("--card-button-bg", theme.buttonBackground);
+  cardElement.style.setProperty("--card-button-text", theme.buttonText);
+}
+
+function createResourceCard(resource) {
+  const fragment = elements.cardTemplate.content.cloneNode(true);
+  const cardElement = fragment.querySelector(".resource-card");
+  const badge = fragment.querySelector(".resource-badge");
+  const status = fragment.querySelector(".resource-status");
+  const name = fragment.querySelector(".resource-name");
+  const description = fragment.querySelector(".resource-description");
+  const primaryLink = fragment.querySelector(".primary-link");
+  const secondaryLink = fragment.querySelector(".secondary-link");
+
+  applyCardTheme(cardElement, resource.type);
 
   badge.textContent = resource.type;
   status.textContent = resource.status;
@@ -429,7 +510,7 @@ function createResourceCard(resource) {
     secondaryLink.hidden = false;
   }
 
-  return card;
+  return fragment;
 }
 
 function renderFilters() {
