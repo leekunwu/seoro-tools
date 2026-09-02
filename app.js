@@ -146,7 +146,6 @@ const resources = [
     pinned: false,
     theme: "flo",
   },
-
   {
     id: "naxos-labels",
     name: "Naxos Labels",
@@ -155,6 +154,16 @@ const resources = [
     type: "CATALOG",
     url: "https://labels.naxos.com/catalog/products/tiles",
     pinned: true,
+  },
+  {
+    id: "audioguy-distribution-dashboard",
+    name: "AUDIOGUY Distribution Dashboard",
+    description: "AUDIOGUY 유통 카탈로그 및 운영 현황 대시보드",
+    category: "Distribution & Catalog",
+    type: "CATALOG",
+    url: "https://sound360music.netlify.app/",
+    pinned: true,
+    theme: "audioguy",
   },
   {
     id: "fuga-catalog",
@@ -298,16 +307,15 @@ const resources = [
     url: "https://www.komca.or.kr/CTLJSP",
     pinned: false,
   },
-  {
+   {
     id: "distroauth",
-    name: "DistroAuth",
-    description: "유통 관련 인증 및 파트너 접근 시스템",
+    name: "The Orchard Workstation",
+    description: "The Orchard 유통 워크스테이션 및 파트너 시스템",
     category: "Partner Systems",
     type: "PARTNER",
     url: "https://login.distroauth.com/u/login?state=hqFo2SB2dVdYMHAxRUdkV244Vjc4NnVwUl92bkg3eFJSdkZUOaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHYySXQ0WlpiZ3VPaTlOd3JPVGt2emVZc21iV1RzX051o2NpZNkgbTlxZ0RHWWh0bG1BMnEzSlIxN2VxaTlUblNzYmp6c1Klb3JnaWS0b3JnXzVpd3pIOFRqVkdmSWtvOG6nb3JnbmFtZadvcmNoYXJk",
     pinned: false,
   },
-
   {
     id: "wetransfer",
     name: "WeTransfer",
@@ -470,7 +478,15 @@ const serviceThemes = {
     badgeBackground: "#dce7fb",
     badgeText: "#26498a",
   },
+  audioguy: {
+    background: "#f2f7f5",
+    border: "#c9dfd5",
+    accent: "#2e7d62",
+    badgeBackground: "#dceee7",
+    badgeText: "#1e634c",
+  },
 };
+
 
 const defaultTheme = {
   background: "#ffffff",
