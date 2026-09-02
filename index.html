@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SEORO TOOLS — 음악 유통, 메타데이터, 정산 및 DSP 운영을 위한 업무 도구 허브"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#151515" />
+    <title>SEORO TOOLS</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./" aria-label="SEORO TOOLS 홈">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span>SEORO TOOLS</span>
+        </a>
+
+        <p class="header-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Music Operations Hub
+        </p>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">MUSIC DISTRIBUTION OPERATIONS</p>
+          <h1>업무 도구와 파트너 시스템을<br />한 곳에서 빠르게 실행합니다.</h1>
+          <p class="hero-description">
+            메타데이터, 파일 변환, 디지털 정산, DSP 모니터링 및 유통 파트너
+            시스템을 위한 SEORO의 작업 허브입니다.
+          </p>
+
+          <div class="search-wrap">
+            <label class="sr-only" for="resource-search">
+              도구 또는 서비스 검색
+            </label>
+            <svg
+              class="search-icon"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <circle cx="11" cy="11" r="6.5"></circle>
+              <path d="m16 16 4 4"></path>
+            </svg>
+            <input
+              id="resource-search"
+              class="resource-search"
+              type="search"
+              placeholder="도구, DSP 또는 업무 키워드 검색"
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <kbd class="search-shortcut" aria-hidden="true">/</kbd>
+          </div>
+
+          <p id="search-result-summary" class="search-result-summary" aria-live="polite">
+            전체 도구와 바로가기를 표시하고 있습니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="filter-section" aria-label="카테고리 필터">
+        <div class="container">
+          <div id="category-filters" class="filter-list" role="tablist" aria-label="도구 카테고리">
+            <!-- app.js에서 생성 -->
+          </div>
+        </div>
+      </section>
+
+      <section class="resource-section" aria-labelledby="pinned-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">FREQUENTLY USED</p>
+              <h2 id="pinned-title">Quick Access</h2>
+            </div>
+            <p>자주 사용하는 도구와 서비스</p>
+          </div>
