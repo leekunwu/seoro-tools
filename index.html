@@ -90,3 +90,76 @@
             </div>
             <p>자주 사용하는 도구와 서비스</p>
           </div>
+
+          <div id="pinned-grid" class="pinned-grid">
+            <!-- app.js에서 생성 -->
+          </div>
+        </div>
+      </section>
+
+      <section class="resource-section all-resources-section" aria-labelledby="all-tools-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">ALL RESOURCES</p>
+              <h2 id="all-tools-title">Tools &amp; Shortcuts</h2>
+            </div>
+            <p id="resource-count" aria-live="polite"></p>
+          </div>
+
+          <div id="empty-state" class="empty-state" hidden>
+            <div class="empty-state-icon" aria-hidden="true">⌕</div>
+            <h3>일치하는 항목이 없습니다</h3>
+            <p>다른 키워드로 검색하거나 카테고리 필터를 변경해 보세요.</p>
+            <button id="reset-filters-button" class="text-button" type="button">
+              검색 및 필터 초기화
+            </button>
+          </div>
+
+          <div id="resource-groups">
+            <!-- app.js에서 생성 -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>SEORO TOOLS · Music Operations Hub</p>
+        <p id="last-updated">Last updated: —</p>
+      </div>
+    </footer>
+
+    <template id="resource-card-template">
+      <article class="resource-card">
+        <div class="card-top">
+          <span class="resource-badge"></span>
+          <span class="resource-status"></span>
+        </div>
+
+        <div class="card-content">
+          <h3 class="resource-name"></h3>
+          <p class="resource-description"></p>
+        </div>
+
+        <div class="card-footer">
+          <a class="resource-link primary-link" target="_blank" rel="noopener noreferrer">
+            <span class="link-label">열기</span>
+            <span class="external-icon" aria-hidden="true">↗</span>
+          </a>
+          <a
+            class="resource-link secondary-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            hidden
+          >
+            GitHub
+            <span class="external-icon" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
