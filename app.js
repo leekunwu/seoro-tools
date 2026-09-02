@@ -3,7 +3,7 @@ const resources = [
     id: "universal-file-mapper",
     name: "Universal File Mapper",
     description: "서로 다른 파일 구조와 컬럼을 기준 형식에 맞게 매핑하는 업무용 도구",
-    category: "My Tools",
+    category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://leekunwu.github.io/universal-file-mapper/",
     pinned: true,
@@ -11,8 +11,8 @@ const resources = [
   {
     id: "release-notes",
     name: "Release Notes",
-    description: "CSV 기반 발매 문구와 릴리스 노트를 확인하는 업무용 도구",
-    category: "My Tools",
+    description: "음악을 발매하는 팀의 알려진 이슈와 의도된 동작들",
+    category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://leekunwu.github.io/release-notes/",
     pinned: false,
@@ -21,16 +21,16 @@ const resources = [
     id: "multi-platform-music-search",
     name: "Multi-Platform Music Search",
     description: "하나의 키워드로 주요 음악 플랫폼의 검색 결과를 빠르게 여는 도구",
-    category: "My Tools",
+    category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://leekunwu.github.io/Multi_Platform_Music_Search/",
-    pinned: true,
+    pinned: false,
   },
   {
     id: "digital-settlement-mapper",
     name: "Digital Settlement Mapper",
     description: "디지털 정산 데이터를 통합 업무 형식으로 매핑하고 정리하는 도구",
-    category: "My Tools",
+    category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://leekunwu.github.io/digital-settlement-mapper/",
     pinned: true,
@@ -39,9 +39,36 @@ const resources = [
     id: "csv-encoding-fixer",
     name: "CSV Encoding Fixer",
     description: "CSV 파일의 인코딩 문제를 확인하고 업무용 형식으로 변환하는 도구",
-    category: "My Tools",
+    category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://leekunwu.github.io/csv-encoding-fixer/",
+    pinned: false,
+  },
+  {
+    id: "audioguy-distribution-dashboard",
+    name: "AUDIOGUY Distribution Dashboard",
+    description: "AUDIOGUY 유통 카탈로그 및 운영 현황 대시보드",
+    category: "SEORO TOOLS",
+    type: "SEORO TOOL",
+    url: "https://sound360music.netlify.app/",
+    pinned: true,
+  },
+  {
+    id: "settlement-consolidator",
+    name: "Settlement Consolidator",
+    description: "유통사 정산 원본을 월별 정산내역서로 취합·매핑·환율 반영·내보내기",
+    category: "SEORO TOOLS",
+    type: "SEORO TOOL",
+    url: "https://docs.google.com/spreadsheets/d/1iT99zK5b1_981bGJ17O37h_KwTxSA-mfhV8QqaUdYeA/edit?gid=1128828444#gid=1128828444",
+    pinned: true,
+  },
+  {
+    id: "gmail-draft-composer",
+    name: "Gmail Draft Composer",
+    description: "스프레드시트 연동 배치 초안 생성, 토큰 개인화 및 테스트 모드 지원",
+    category: "SEORO TOOLS",
+    type: "SEORO TOOL",
+    url: "https://script.google.com/a/macros/audioguyrecords.com/s/AKfycbwHgPh4KwJc8KUFYs8ROZLC_qGiMHQKYEvQr7E9ux5DnRKKMjbLPlV7o2GDL7WwpliF/exec",
     pinned: true,
   },
 
@@ -52,8 +79,7 @@ const resources = [
     category: "Global DSP",
     type: "DSP",
     url: "https://music.apple.com/us/new",
-    pinned: true,
-    theme: "apple",
+    pinned: false,
   },
   {
     id: "spotify",
@@ -63,7 +89,6 @@ const resources = [
     type: "DSP",
     url: "https://open.spotify.com/",
     pinned: true,
-    theme: "spotify",
   },
   {
     id: "youtube-music",
@@ -72,8 +97,7 @@ const resources = [
     category: "Global DSP",
     type: "DSP",
     url: "https://music.youtube.com/",
-    pinned: true,
-    theme: "youtube",
+    pinned: false,
   },
   {
     id: "tidal",
@@ -83,7 +107,6 @@ const resources = [
     type: "DSP",
     url: "https://tidal.com/",
     pinned: false,
-    theme: "tidal",
   },
   {
     id: "amazon-music",
@@ -93,7 +116,6 @@ const resources = [
     type: "DSP",
     url: "https://music.amazon.com/search?filter=IsLibrary%7Cfalse&sc=none",
     pinned: false,
-    theme: "amazon",
   },
 
   {
@@ -104,7 +126,6 @@ const resources = [
     type: "DSP",
     url: "https://www.melon.com/index.htm",
     pinned: true,
-    theme: "melon",
   },
   {
     id: "genie",
@@ -114,7 +135,6 @@ const resources = [
     type: "DSP",
     url: "https://www.genie.co.kr/",
     pinned: false,
-    theme: "genie",
   },
   {
     id: "bugs",
@@ -124,7 +144,6 @@ const resources = [
     type: "DSP",
     url: "https://music.bugs.co.kr/",
     pinned: false,
-    theme: "bugs",
   },
   {
     id: "vibe",
@@ -134,7 +153,6 @@ const resources = [
     type: "DSP",
     url: "https://vibe.naver.com/today",
     pinned: false,
-    theme: "vibe",
   },
   {
     id: "flo",
@@ -144,215 +162,218 @@ const resources = [
     type: "DSP",
     url: "https://www.music-flo.com/",
     pinned: false,
-    theme: "flo",
   },
+
   {
     id: "naxos-labels",
     name: "Naxos Labels",
-    description: "Naxos Labels 카탈로그 및 상품 정보 확인",
-    category: "Distribution & Catalog",
-    type: "CATALOG",
+    description: "Naxos Labels 유통 등록 및 카탈로그 운영 시스템",
+    category: "Distribution Partners",
+    type: "PARTNER",
     url: "https://labels.naxos.com/catalog/products/tiles",
-    pinned: true,
+    pinned: false,
   },
   {
-    id: "audioguy-distribution-dashboard",
-    name: "AUDIOGUY Distribution Dashboard",
-    description: "AUDIOGUY 유통 카탈로그 및 운영 현황 대시보드",
-    category: "Distribution & Catalog",
-    type: "CATALOG",
-    url: "https://sound360music.netlify.app/",
-    pinned: true,
-    theme: "audioguy",
+    id: "kakao-mlb",
+    name: "Kakao MLB",
+    description: "Kakao Entertainment Music Licence Bank 유통 운영 시스템",
+    category: "Distribution Partners",
+    type: "PARTNER",
+    url: "https://imlb.co.kr/login",
+    pinned: false,
+  },
+  {
+    id: "genie-kola",
+    name: "Genie KOLA",
+    description: "Genie 유통 등록 및 정산 확인 파트너 시스템",
+    category: "Distribution Partners",
+    type: "PARTNER",
+    url: "https://kola.geniemusic.co.kr/login/login",
+    pinned: false,
+  },
+  {
+    id: "bugs-partners",
+    name: "Bugs Partners",
+    description: "Bugs 유통 등록 및 정산 확인 파트너 시스템",
+    category: "Distribution Partners",
+    type: "PARTNER",
+    url: "https://partners.bugs.co.kr/index",
+    pinned: false,
+  },
+  {
+    id: "yg-plus-clas",
+    name: "YG PLUS CLAS",
+    description: "YG PLUS 유통 등록 및 정산 확인 파트너 시스템",
+    category: "Distribution Partners",
+    type: "PARTNER",
+    url: "http://clas.ygplus.com",
+    pinned: false,
+  },
+  {
+    id: "flo-mcp",
+    name: "FLO MCP",
+    description: "FLO 유통 등록 및 정산 확인 파트너 시스템",
+    category: "Distribution Partners",
+    type: "PARTNER",
+    url: "https://mcp.music-flo.com/login",
+    pinned: false,
   },
   {
     id: "fuga-catalog",
     name: "FUGA Catalog",
-    description: "FUGA 카탈로그 및 상품 관리 시스템",
-    category: "Distribution & Catalog",
+    description: "FUGA 유통 등록, 카탈로그 및 정산 운영 시스템",
+    category: "Distribution Partners",
     type: "PARTNER",
     url: "https://fugamusic.com/login/?r=%2Fcatalog%2Fproducts%2Fgrid",
+    pinned: false,
+  },
+  {
+    id: "the-orchard-workstation",
+    name: "The Orchard Workstation",
+    description: "The Orchard 유통 등록, 카탈로그 및 정산 운영 시스템",
+    category: "Distribution Partners",
+    type: "PARTNER",
+    url: "https://login.distroauth.com/u/login?state=hqFo2SB2dVdYMHAxRUdkV244Vjc4NnVwUl92bkg3eFJSdkZUOaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHYySXQ0WlpiZ3VPaTlOd3JPVGt2emVZc21iV1RzX051o2NpZNkgbTlxZ0RHWWh0bG1BMnEzSlIxN2VxaTlUblNzYmp6c1Klb3JnaWS0b3JnXzVpd3pIOFRqVkdmSWtvOG6nb3JnbmFtZadvcmNoYXJk",
     pinned: true,
   },
   {
+    id: "sme-artist-portal",
+    name: "SME Artist Portal",
+    description: "Sony Music Entertainment 유통 등록 및 아티스트 파트너 포털",
+    category: "Distribution Partners",
+    type: "PARTNER",
+    url: "https://sme-artistportal.com/login?returnUrl=%2F",
+    pinned: false,
+  },
+  {
+    id: "mound-media-partner",
+    name: "Mound Media Partner",
+    description: "POCLANOS 파트너 시스템",
+    category: "Distribution Partners",
+    type: "PARTNER",
+    url: "https://partner.moundmedia.net/",
+    pinned: false,
+  },
+  {
+    id: "leeway-music-media",
+    name: "Leeway Music & Media",
+    description: "리웨이뮤직앤미디어 유통 등록 및 정산 확인 파트너 시스템",
+    category: "Distribution Partners",
+    type: "PARTNER",
+    url: "https://leeway.cuomusic.co.kr/musicgate/login.php",
+    pinned: false,
+  },
+  {
+    id: "ogam-ent",
+    name: "OGAM ENT",
+    description: "오감엔터테인먼트 서비스",
+    category: "Distribution Partners",
+    type: "PARTNER",
+    url: "http://ogame.co.kr/member/login",
+    pinned: false,
+  },
+  {
+    id: "kyobo-partner",
+    name: "Kyobo Partner",
+    description: "교보문고 유통 등록 및 정산 확인 파트너 시스템",
+    category: "Distribution Partners",
+    type: "PARTNER",
+    url: "https://partner.kyobobook.co.kr/login",
+    pinned: false,
+  },
+
+  {
     id: "nds-score",
     name: "NDS Score",
-    description: "NDS 관련 업무 데이터 및 운영 시스템",
-    category: "Distribution & Catalog",
-    type: "PARTNER",
+    description: "낙소스 피칭 툴/서비스",
+    category: "Artist & Marketing",
+    type: "MARKETING",
     url: "https://ndsscore.softr.app/",
     pinned: false,
   },
   {
     id: "nds-smart-url",
     name: "NDS Smart URL",
-    description: "FUGA NDS Smart URL 생성 요청 도구",
-    category: "Distribution & Catalog",
-    type: "PARTNER",
+    description: "found.ee 기반 낙소스·FUGA 스마트 URL 생성 서비스",
+    category: "Artist & Marketing",
+    type: "MARKETING",
     url: "https://fuga.fillout.com/nds-smart-url",
     pinned: false,
   },
-
   {
     id: "apple-music-for-artists",
     name: "Apple Music for Artists",
     description: "Apple Music 아티스트 및 카탈로그 관리 시스템",
-    category: "Partner Systems",
-    type: "PARTNER",
+    category: "Artist & Marketing",
+    type: "MARKETING",
     url: "https://artists.apple.com/ui",
-    pinned: true,
-    theme: "apple",
+    pinned: false,
   },
   {
     id: "spotify-for-artists",
     name: "Spotify for Artists",
     description: "Spotify 아티스트, 릴리스 및 성과 관리",
-    category: "Partner Systems",
-    type: "PARTNER",
+    category: "Artist & Marketing",
+    type: "MARKETING",
     url: "https://artists.spotify.com/home",
-    pinned: true,
-    theme: "spotify",
+    pinned: false,
   },
+
   {
-    id: "yg-plus-clas",
-    name: "YG PLUS CLAS",
-    description: "YG PLUS CLAS 파트너 포털",
-    category: "Partner Systems",
-    type: "PARTNER",
-    url: "http://clas.ygplus.com",
+    id: "wetransfer",
+    name: "WeTransfer",
+    description: "대용량 파일 전송",
+    category: "Other & Rights",
+    type: "UTILITY",
+    url: "https://wetransfer.com/",
     pinned: false,
   },
   {
-    id: "leeway-music-media",
-    name: "Leeway Music & Media",
-    description: "리웨이뮤직앤미디어 파트너 시스템",
-    category: "Partner Systems",
-    type: "PARTNER",
-    url: "https://leeway.cuomusic.co.kr/musicgate/login.php",
-    pinned: false,
-  },
-  {
-    id: "sony-music-artist-portal",
-    name: "Sony Music Entertainment Artist Portal",
-    description: "Sony Music Entertainment 아티스트·파트너 포털",
-    category: "Partner Systems",
-    type: "PARTNER",
-    url: "https://sme-artistportal.com/login?returnUrl=%2F",
-    pinned: false,
-    theme: "sony",
-  },
-  {
-    id: "flo-mcp",
-    name: "FLO MCP",
-    description: "FLO 파트너 운영 시스템",
-    category: "Partner Systems",
-    type: "PARTNER",
-    url: "https://mcp.music-flo.com/login",
-    pinned: false,
-    theme: "flo",
-  },
-  {
-    id: "genie-kola",
-    name: "Genie KOLA",
-    description: "Genie 파트너 운영 시스템",
-    category: "Partner Systems",
-    type: "PARTNER",
-    url: "https://kola.geniemusic.co.kr/login/login",
-    pinned: false,
-    theme: "genie",
-  },
-  {
-    id: "bugs-partners",
-    name: "Bugs Partners",
-    description: "Bugs 파트너 운영 시스템",
-    category: "Partner Systems",
-    type: "PARTNER",
-    url: "https://partners.bugs.co.kr/index",
-    pinned: false,
-    theme: "bugs",
-  },
-  {
-    id: "mound-media",
-    name: "Mound Media Partner",
-    description: "Mound Media 파트너 포털",
-    category: "Partner Systems",
-    type: "PARTNER",
-    url: "https://partner.moundmedia.net/",
-    pinned: false,
-  },
-  {
-    id: "imlb",
-    name: "IMLB",
-    description: "유통 및 파트너 업무 시스템",
-    category: "Partner Systems",
-    type: "PARTNER",
-    url: "https://imlb.co.kr/login",
-    pinned: false,
-  },
-  {
-    id: "kyobo-partner",
-    name: "Kyobo Partner",
-    description: "교보문고 파트너 시스템",
-    category: "Partner Systems",
-    type: "PARTNER",
-    url: "https://partner.kyobobook.co.kr/login",
+    id: "modusign",
+    name: "Modusign",
+    description: "전자계약 및 전자서명",
+    category: "Other & Rights",
+    type: "UTILITY",
+    url: "https://app.modusign.co.kr/authentication/signin",
     pinned: false,
   },
   {
     id: "komca",
     name: "KOMCA",
     description: "한국음악저작권협회 저작권 업무 시스템",
-    category: "Partner Systems",
+    category: "Other & Rights",
     type: "RIGHTS",
     url: "https://www.komca.or.kr/CTLJSP",
     pinned: false,
   },
-   {
-    id: "distroauth",
-    name: "The Orchard Workstation",
-    description: "The Orchard 유통 워크스테이션 및 파트너 시스템",
-    category: "Partner Systems",
-    type: "PARTNER",
-    url: "https://login.distroauth.com/u/login?state=hqFo2SB2dVdYMHAxRUdkV244Vjc4NnVwUl92bkg3eFJSdkZUOaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHYySXQ0WlpiZ3VPaTlOd3JPVGt2emVZc21iV1RzX051o2NpZNkgbTlxZ0RHWWh0bG1BMnEzSlIxN2VxaTlUblNzYmp6c1Klb3JnaWS0b3JnXzVpd3pIOFRqVkdmSWtvOG6nb3JnbmFtZadvcmNoYXJk",
+  {
+    id: "mims",
+    name: "MIMS",
+    description: "RIAK ISRC 및 UCI 발급 시스템",
+    category: "Other & Rights",
+    type: "RIGHTS",
+    url: "https://www.mims.or.kr/login",
     pinned: false,
   },
   {
-    id: "wetransfer",
-    name: "WeTransfer",
-    description: "대용량 파일 전송",
-    category: "Work Utilities",
+    id: "musicfetch",
+    name: "Musicfetch",
+    description: "UPC, ISRC, YouTube Channel ID 및 음악 메타데이터 조회",
+    category: "Other & Rights",
     type: "UTILITY",
-    url: "https://wetransfer.com/",
-    pinned: true,
-  },
-  {
-    id: "modusign",
-    name: "Modusign",
-    description: "전자계약 및 전자서명",
-    category: "Work Utilities",
-    type: "UTILITY",
-    url: "https://app.modusign.co.kr/authentication/signin",
-    pinned: true,
-  },
-  {
-    id: "ogame",
-    name: "OGame",
-    description: "기타 업무 시스템",
-    category: "Work Utilities",
-    type: "UTILITY",
-    url: "http://ogame.co.kr/member/login",
+    url: "https://musicfetch.io/",
     pinned: false,
   },
 ];
 
 const categoryOrder = [
   "All",
-  "My Tools",
+  "SEORO TOOLS",
   "Global DSP",
   "Korea DSP",
-  "Distribution & Catalog",
-  "Partner Systems",
-  "Work Utilities",
+  "Distribution Partners",
+  "Artist & Marketing",
+  "Other & Rights",
 ];
 
 const typeThemes = {
@@ -360,140 +381,38 @@ const typeThemes = {
     background: "#f1f3fb",
     border: "#ccd5f2",
     accent: "#405ba8",
-    badgeBackground: "#dde4f8",
-    badgeText: "#294381",
   },
   DSP: {
     background: "#f0f6f1",
     border: "#c9ddcd",
     accent: "#2f7d4b",
-    badgeBackground: "#dceee0",
-    badgeText: "#24623b",
-  },
-  CATALOG: {
-    background: "#fdf6ea",
-    border: "#ead8b5",
-    accent: "#9a681f",
-    badgeBackground: "#f5e7ca",
-    badgeText: "#7b5013",
   },
   PARTNER: {
     background: "#f6f1f7",
     border: "#dfcde2",
     accent: "#7d4f8b",
-    badgeBackground: "#ebdced",
-    badgeText: "#633a70",
+  },
+  MARKETING: {
+    background: "#fdf6ea",
+    border: "#ead8b5",
+    accent: "#9a681f",
   },
   RIGHTS: {
     background: "#f8f2ee",
     border: "#e8d4c7",
     accent: "#9a5b35",
-    badgeBackground: "#f0dfd3",
-    badgeText: "#7a4425",
   },
   UTILITY: {
     background: "#f3f4f5",
     border: "#d8dde0",
     accent: "#55616a",
-    badgeBackground: "#e7ebed",
-    badgeText: "#424c53",
   },
 };
-
-const serviceThemes = {
-  apple: {
-    background: "#fff2f5",
-    border: "#f0cbd5",
-    accent: "#d84c70",
-    badgeBackground: "#ffe0e8",
-    badgeText: "#a92b4c",
-  },
-  spotify: {
-    background: "#effaf2",
-    border: "#bee6c9",
-    accent: "#1f8d4e",
-    badgeBackground: "#d9f3e1",
-    badgeText: "#176f3d",
-  },
-  youtube: {
-    background: "#fff2f2",
-    border: "#f0c6c6",
-    accent: "#ca3e3e",
-    badgeBackground: "#fde0e0",
-    badgeText: "#a32d2d",
-  },
-  tidal: {
-    background: "#f3f3f3",
-    border: "#d5d5d5",
-    accent: "#303030",
-    badgeBackground: "#e7e7e7",
-    badgeText: "#202020",
-  },
-  amazon: {
-    background: "#f0f7fc",
-    border: "#c5deef",
-    accent: "#397fac",
-    badgeBackground: "#dceef9",
-    badgeText: "#2c6388",
-  },
-  melon: {
-    background: "#effaf9",
-    border: "#c3e7e1",
-    accent: "#208f83",
-    badgeBackground: "#d8f2ed",
-    badgeText: "#176f65",
-  },
-  genie: {
-    background: "#f3f0ff",
-    border: "#d8cef1",
-    accent: "#6950b5",
-    badgeBackground: "#e6dff9",
-    badgeText: "#503a94",
-  },
-  bugs: {
-    background: "#fff5ec",
-    border: "#f0d3b2",
-    accent: "#c67428",
-    badgeBackground: "#fae3ca",
-    badgeText: "#9f581a",
-  },
-  vibe: {
-    background: "#f5f2fc",
-    border: "#ded4f1",
-    accent: "#7752aa",
-    badgeBackground: "#e9e1f8",
-    badgeText: "#5d3d8d",
-  },
-  flo: {
-    background: "#f2f7ff",
-    border: "#cbdbf1",
-    accent: "#3d68ab",
-    badgeBackground: "#dce8fa",
-    badgeText: "#2f528a",
-  },
-  sony: {
-    background: "#f2f6ff",
-    border: "#cad8f2",
-    accent: "#315ca8",
-    badgeBackground: "#dce7fb",
-    badgeText: "#26498a",
-  },
-  audioguy: {
-    background: "#f2f7f5",
-    border: "#c9dfd5",
-    accent: "#2e7d62",
-    badgeBackground: "#dceee7",
-    badgeText: "#1e634c",
-  },
-};
-
 
 const defaultTheme = {
   background: "#ffffff",
   border: "#e2e2dc",
   accent: "#1b1b1a",
-  badgeBackground: "#f1f1ee",
-  badgeText: "#6e6e69",
 };
 
 const state = {
@@ -509,7 +428,6 @@ const elements = {
   resourceGroups: document.querySelector("#resource-groups"),
   resourceCount: document.querySelector("#resource-count"),
   emptyState: document.querySelector("#empty-state"),
-  resetButton: document.querySelector("#reset-filters-button"),
   cardTemplate: document.querySelector("#resource-card-template"),
   lastUpdated: document.querySelector("#last-updated"),
 };
@@ -538,32 +456,27 @@ function getFilteredResources() {
   });
 }
 
-function applyTheme(card, resource) {
-  const theme =
-    (resource.theme && serviceThemes[resource.theme]) ||
-    typeThemes[resource.type] ||
-    defaultTheme;
+function applyTheme(card, type) {
+  const theme = typeThemes[type] ?? defaultTheme;
 
   card.style.setProperty("--card-bg", theme.background);
   card.style.setProperty("--card-border", theme.border);
   card.style.setProperty("--card-accent", theme.accent);
-  card.style.setProperty("--card-badge-bg", theme.badgeBackground);
-  card.style.setProperty("--card-badge-text", theme.badgeText);
 }
 
 function createCard(resource) {
   const fragment = elements.cardTemplate.content.cloneNode(true);
   const card = fragment.querySelector(".resource-card");
+  const name = fragment.querySelector(".resource-name");
+  const description = fragment.querySelector(".resource-description");
 
-  applyTheme(card, resource);
+  applyTheme(card, resource.type);
 
   card.href = resource.url;
   card.setAttribute("aria-label", `${resource.name} 열기 (새 탭)`);
 
-  fragment.querySelector(".resource-badge").textContent = resource.type;
-  fragment.querySelector(".resource-name").textContent = resource.name;
-  fragment.querySelector(".resource-description").textContent =
-    resource.description;
+  name.textContent = resource.name;
+  description.textContent = resource.description;
 
   return fragment;
 }
@@ -708,8 +621,6 @@ elements.search.addEventListener("keydown", (event) => {
     resetFilters();
   }
 });
-
-elements.resetButton.addEventListener("click", resetFilters);
 
 document.addEventListener("keydown", (event) => {
   const activeElement = document.activeElement;
