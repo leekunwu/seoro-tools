@@ -8,15 +8,11 @@
   --color-border: #d8d8d2;
   --color-border-strong: #b9b9b2;
   --color-accent: #171717;
-  --color-accent-hover: #353535;
   --color-focus: #2f6fed;
-  --color-success: #257349;
-  --color-warning: #8b5a18;
 
   --font-sans: Inter, Pretendard, "Noto Sans KR", "Apple SD Gothic Neo",
     "Malgun Gothic", Arial, sans-serif;
 
-  --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
   --space-4: 16px;
@@ -75,10 +71,6 @@ button {
   cursor: pointer;
 }
 
-button:disabled {
-  cursor: not-allowed;
-}
-
 .container {
   width: min(calc(100% - 40px), var(--container-width));
   margin-inline: auto;
@@ -134,7 +126,6 @@ button:disabled {
 
 .brand {
   color: var(--color-text);
-  font-family: Pretendard, "Pretendard Variable", var(--font-sans);
   font-size: clamp(21px, 2.2vw, 28px);
   font-weight: 800;
   letter-spacing: -0.045em;
@@ -158,32 +149,12 @@ button:disabled {
   font-weight: 650;
   text-decoration: none;
   white-space: nowrap;
-  transition:
-    color var(--transition-fast),
-    border-color var(--transition-fast),
-    background var(--transition-fast);
 }
 
 .creator-pill:hover {
   color: var(--color-text);
   border-color: var(--color-border-strong);
   background: var(--color-surface-muted);
-}
-
-.header-status {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  margin: 0;
-  color: var(--color-text-muted);
-  font-size: 12px;
-}
-
-.status-dot {
-  width: 8px;
-  height: 8px;
-  background: var(--color-success);
-  border-radius: 50%;
 }
 
 .hero {
@@ -248,17 +219,10 @@ button:disabled {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   font-size: 16px;
-  transition:
-    border-color var(--transition-fast),
-    box-shadow var(--transition-fast);
 }
 
 .resource-search::placeholder {
   color: var(--color-text-subtle);
-}
-
-.resource-search:hover {
-  border-color: var(--color-text-muted);
 }
 
 .resource-search:focus {
@@ -275,7 +239,6 @@ button:disabled {
   color: var(--color-text-muted);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  font-family: inherit;
   font-size: 12px;
   text-align: center;
 }
@@ -316,18 +279,9 @@ button:disabled {
   background: var(--color-surface);
   font-size: 13px;
   font-weight: 650;
-  transition:
-    color var(--transition-fast),
-    background var(--transition-fast),
-    border-color var(--transition-fast);
 }
 
-.filter-button:hover {
-  color: var(--color-text);
-  border-color: var(--color-border-strong);
-}
-
-.filter-button[aria-selected="true"] {
+.filter-button[aria-pressed="true"] {
   color: var(--color-surface);
   border-color: var(--color-accent);
   background: var(--color-accent);
@@ -355,7 +309,6 @@ button:disabled {
 
 .section-heading h2 {
   margin: 0;
-  color: var(--color-text);
   font-size: clamp(24px, 3vw, 32px);
   font-weight: 750;
   letter-spacing: -0.04em;
@@ -383,7 +336,6 @@ button:disabled {
   align-items: center;
   gap: var(--space-3);
   margin: 0 0 var(--space-4);
-  color: var(--color-text);
   font-size: 16px;
   font-weight: 750;
   letter-spacing: -0.02em;
@@ -408,14 +360,16 @@ button:disabled {
   position: relative;
   display: flex;
   min-width: 0;
-  min-height: 174px;
+  min-height: 160px;
   flex-direction: column;
   padding: var(--space-4);
   overflow: hidden;
+  color: var(--color-text);
   background: var(--card-bg, var(--color-surface));
   border: 1px solid var(--card-border, var(--color-border));
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+  text-decoration: none;
   transition:
     border-color var(--transition-fast),
     box-shadow var(--transition-fast),
@@ -442,6 +396,8 @@ button:disabled {
   display: flex;
   min-height: 24px;
   align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
 }
 
 .resource-badge {
@@ -458,24 +414,24 @@ button:disabled {
   white-space: nowrap;
 }
 
-.resource-status {
-  color: var(--color-success);
-  background: rgb(37 115 73 / 10%);
+.card-arrow {
+  color: var(--card-accent, var(--color-text-muted));
+  font-size: 18px;
+  line-height: 1;
+  transition: transform var(--transition-fast);
 }
 
-.resource-status[data-status="BETA"] {
-  color: var(--color-warning);
-  background: rgb(139 90 24 / 12%);
+.resource-card:hover .card-arrow {
+  transform: translate(2px, -2px);
 }
 
 .card-content {
   flex: 1;
-  padding: var(--space-4) 0;
+  padding: var(--space-4) 0 0;
 }
 
 .resource-name {
   margin: 0;
-  color: var(--color-text);
   font-size: 17px;
   font-weight: 750;
   letter-spacing: -0.035em;
@@ -492,52 +448,6 @@ button:disabled {
   line-height: 1.55;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-}
-
-.card-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-2);
-}
-
-.resource-link {
-  display: inline-flex;
-  min-height: 36px;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-2);
-  border-radius: var(--radius-sm);
-  font-size: 13px;
-  font-weight: 750;
-  text-decoration: none;
-}
-
-.primary-link {
-  padding: 0 var(--space-4);
-  color: var(--card-button-text, var(--color-surface));
-  background: var(--card-button-bg, var(--color-accent));
-  transition: filter var(--transition-fast);
-}
-
-.primary-link:hover {
-  filter: brightness(0.9);
-}
-
-.secondary-link {
-  padding: 0 var(--space-2);
-  color: var(--color-text-muted);
-}
-
-.secondary-link:hover {
-  color: var(--color-text);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.external-icon {
-  font-size: 15px;
-  line-height: 1;
 }
 
 .empty-state {
@@ -558,7 +468,6 @@ button:disabled {
   height: 46px;
   margin-bottom: var(--space-4);
   place-items: center;
-  color: var(--color-text-muted);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 50%;
@@ -638,11 +547,7 @@ button:disabled {
     text-overflow: ellipsis;
   }
 
-  .creator-pill span {
-    display: none;
-  }
-
-  .header-status {
+  .creator-pill span:nth-child(2) {
     display: none;
   }
 
@@ -688,10 +593,6 @@ button:disabled {
   .pinned-grid,
   .resource-grid {
     grid-template-columns: 1fr;
-  }
-
-  .resource-card {
-    min-height: 162px;
   }
 
   .footer-inner {
