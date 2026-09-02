@@ -433,12 +433,16 @@ button {
 
 .resource-icon {
   display: grid;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
   place-items: center;
   color: var(--card-accent, var(--color-text-muted));
   font-family: "Material Symbols Outlined";
   font-size: 30px;
   font-style: normal;
   font-weight: normal;
+  letter-spacing: normal;
   line-height: 1;
   text-transform: none;
   white-space: nowrap;
