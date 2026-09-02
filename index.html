@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="SEORO TOOLS — 음악 유통, 메타데이터, 정산 및 DSP 운영을 위한 업무 도구 허브"
+      content="SEORO TOOLS — 음악 유통, 메타데이터, 정산 및 파트너 시스템을 위한 업무 도구 허브"
     />
     <meta name="robots" content="noindex, nofollow" />
-    <meta name="theme-color" content="#151515" />
+    <meta name="theme-color" content="#171717" />
     <title>SEORO TOOLS</title>
 
     <link
@@ -32,9 +32,8 @@
           href="mailto:kunwu@audioguyrecords.com"
           aria-label="만든이 이건우에게 이메일 보내기"
         >
-          <span>만든이: 이건우</span>
-          <span aria-hidden="true">·</span>
-          <span>kunwu@audioguyrecords.com</span>
+          <span class="creator-prefix">만든이 ·</span>
+          <span>이건우</span>
         </a>
       </div>
     </header>
@@ -50,8 +49,8 @@
           </h1>
 
           <p class="hero-description">
-            메타데이터, 파일 변환, 디지털 정산, DSP 모니터링 및 유통 파트너
-            시스템을 위한 SEORO의 작업 허브입니다.
+            메타데이터, 정산, 유통 운영, DSP 모니터링 및 파트너 시스템을 위한
+            SEORO의 작업 허브입니다.
           </p>
 
           <div class="search-wrap">
@@ -107,14 +106,14 @@
         </div>
       </section>
 
-      <section class="resource-section" aria-labelledby="pinned-title">
+      <section class="resource-section quick-access-section" aria-labelledby="pinned-title">
         <div class="container">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">FREQUENTLY USED</p>
-              <h2 id="pinned-title">Quick Access</h2>
+              <p class="eyebrow">QUICK ACCESS</p>
+              <h2 id="pinned-title">업무 시작점 바로가기</h2>
             </div>
-            <p>자주 사용하는 도구와 서비스</p>
+            <p>자주 사용하는 8개 서비스</p>
           </div>
 
           <div id="pinned-grid" class="pinned-grid"></div>
@@ -129,31 +128,21 @@
           <div class="section-heading">
             <div>
               <p class="eyebrow">ALL RESOURCES</p>
-              <h2 id="all-tools-title">Tools &amp; Shortcuts</h2>
+              <h2 id="all-tools-title">All Resources</h2>
             </div>
 
             <p id="resource-count" aria-live="polite" aria-atomic="true"></p>
           </div>
 
-          <div
+          <p
             id="empty-state"
             class="empty-state"
             role="status"
             aria-live="polite"
             hidden
           >
-            <div class="empty-state-icon" aria-hidden="true">⌕</div>
-            <h3>일치하는 항목이 없습니다</h3>
-            <p>다른 키워드로 검색하거나 카테고리 필터를 변경해 보세요.</p>
-
-            <button
-              id="reset-filters-button"
-              class="text-button"
-              type="button"
-            >
-              검색 및 필터 초기화
-            </button>
-          </div>
+            일치하는 항목이 없습니다
+          </p>
 
           <div id="resource-groups"></div>
         </div>
@@ -173,15 +162,8 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div class="card-top">
-          <span class="resource-badge"></span>
-          <span class="card-arrow" aria-hidden="true">↗</span>
-        </div>
-
-        <div class="card-content">
-          <h3 class="resource-name"></h3>
-          <p class="resource-description"></p>
-        </div>
+        <span class="resource-name"></span>
+        <span class="resource-description" aria-hidden="true"></span>
       </a>
     </template>
 
