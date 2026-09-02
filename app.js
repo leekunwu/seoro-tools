@@ -5,9 +5,7 @@ const resources = [
     description: "서로 다른 파일 구조와 컬럼을 기준 형식에 맞게 매핑하는 업무용 도구",
     category: "My Tools",
     type: "SEORO TOOL",
-    status: "LIVE",
     url: "https://leekunwu.github.io/universal-file-mapper/",
-    githubUrl: "https://github.com/leekunwu/universal-file-mapper",
     pinned: true,
   },
   {
@@ -16,9 +14,7 @@ const resources = [
     description: "CSV 기반 발매 문구와 릴리스 노트를 확인하는 업무용 도구",
     category: "My Tools",
     type: "SEORO TOOL",
-    status: "LIVE",
     url: "https://leekunwu.github.io/release-notes/",
-    githubUrl: "https://github.com/leekunwu/release-notes",
     pinned: false,
   },
   {
@@ -27,9 +23,7 @@ const resources = [
     description: "하나의 키워드로 주요 음악 플랫폼의 검색 결과를 빠르게 여는 도구",
     category: "My Tools",
     type: "SEORO TOOL",
-    status: "LIVE",
     url: "https://leekunwu.github.io/Multi_Platform_Music_Search/",
-    githubUrl: "https://github.com/leekunwu/Multi_Platform_Music_Search",
     pinned: true,
   },
   {
@@ -38,9 +32,7 @@ const resources = [
     description: "디지털 정산 데이터를 통합 업무 형식으로 매핑하고 정리하는 도구",
     category: "My Tools",
     type: "SEORO TOOL",
-    status: "LIVE",
     url: "https://leekunwu.github.io/digital-settlement-mapper/",
-    githubUrl: "https://github.com/leekunwu/digital-settlement-mapper",
     pinned: true,
   },
   {
@@ -49,9 +41,7 @@ const resources = [
     description: "CSV 파일의 인코딩 문제를 확인하고 업무용 형식으로 변환하는 도구",
     category: "My Tools",
     type: "SEORO TOOL",
-    status: "LIVE",
     url: "https://leekunwu.github.io/csv-encoding-fixer/",
-    githubUrl: "https://github.com/leekunwu/csv-encoding-fixer",
     pinned: true,
   },
 
@@ -61,9 +51,9 @@ const resources = [
     description: "Apple Music 신작 및 글로벌 DSP 모니터링",
     category: "Global DSP",
     type: "DSP",
-    status: "OPEN",
     url: "https://music.apple.com/us/new",
     pinned: true,
+    theme: "apple",
   },
   {
     id: "spotify",
@@ -71,9 +61,9 @@ const resources = [
     description: "Spotify 검색, 아티스트 및 릴리스 모니터링",
     category: "Global DSP",
     type: "DSP",
-    status: "OPEN",
     url: "https://open.spotify.com/",
     pinned: true,
+    theme: "spotify",
   },
   {
     id: "youtube-music",
@@ -81,9 +71,9 @@ const resources = [
     description: "YouTube Music 검색 및 서비스 모니터링",
     category: "Global DSP",
     type: "DSP",
-    status: "OPEN",
     url: "https://music.youtube.com/",
     pinned: true,
+    theme: "youtube",
   },
   {
     id: "tidal",
@@ -91,9 +81,9 @@ const resources = [
     description: "TIDAL 카탈로그 및 글로벌 DSP 모니터링",
     category: "Global DSP",
     type: "DSP",
-    status: "OPEN",
     url: "https://tidal.com/",
     pinned: false,
+    theme: "tidal",
   },
   {
     id: "amazon-music",
@@ -101,9 +91,9 @@ const resources = [
     description: "Amazon Music 검색 및 카탈로그 확인",
     category: "Global DSP",
     type: "DSP",
-    status: "OPEN",
     url: "https://music.amazon.com/search?filter=IsLibrary%7Cfalse&sc=none",
     pinned: false,
+    theme: "amazon",
   },
 
   {
@@ -112,9 +102,9 @@ const resources = [
     description: "멜론 검색 및 국내 DSP 모니터링",
     category: "Korea DSP",
     type: "DSP",
-    status: "OPEN",
     url: "https://www.melon.com/index.htm",
     pinned: true,
+    theme: "melon",
   },
   {
     id: "genie",
@@ -122,9 +112,9 @@ const resources = [
     description: "지니 검색 및 국내 DSP 모니터링",
     category: "Korea DSP",
     type: "DSP",
-    status: "OPEN",
     url: "https://www.genie.co.kr/",
     pinned: false,
+    theme: "genie",
   },
   {
     id: "bugs",
@@ -132,9 +122,9 @@ const resources = [
     description: "벅스 검색 및 국내 DSP 모니터링",
     category: "Korea DSP",
     type: "DSP",
-    status: "OPEN",
     url: "https://music.bugs.co.kr/",
     pinned: false,
+    theme: "bugs",
   },
   {
     id: "vibe",
@@ -142,9 +132,9 @@ const resources = [
     description: "VIBE 신작 및 국내 DSP 모니터링",
     category: "Korea DSP",
     type: "DSP",
-    status: "OPEN",
     url: "https://vibe.naver.com/today",
     pinned: false,
+    theme: "vibe",
   },
   {
     id: "flo",
@@ -152,9 +142,9 @@ const resources = [
     description: "FLO 검색 및 국내 DSP 모니터링",
     category: "Korea DSP",
     type: "DSP",
-    status: "OPEN",
     url: "https://www.music-flo.com/",
     pinned: false,
+    theme: "flo",
   },
 
   {
@@ -163,7 +153,6 @@ const resources = [
     description: "Naxos Labels 카탈로그 및 상품 정보 확인",
     category: "Distribution & Catalog",
     type: "CATALOG",
-    status: "OPEN",
     url: "https://labels.naxos.com/catalog/products/tiles",
     pinned: true,
   },
@@ -173,7 +162,6 @@ const resources = [
     description: "FUGA 카탈로그 및 상품 관리 시스템",
     category: "Distribution & Catalog",
     type: "PARTNER",
-    status: "LOGIN",
     url: "https://fugamusic.com/login/?r=%2Fcatalog%2Fproducts%2Fgrid",
     pinned: true,
   },
@@ -183,7 +171,6 @@ const resources = [
     description: "NDS 관련 업무 데이터 및 운영 시스템",
     category: "Distribution & Catalog",
     type: "PARTNER",
-    status: "OPEN",
     url: "https://ndsscore.softr.app/",
     pinned: false,
   },
@@ -193,7 +180,6 @@ const resources = [
     description: "FUGA NDS Smart URL 생성 요청 도구",
     category: "Distribution & Catalog",
     type: "PARTNER",
-    status: "OPEN",
     url: "https://fuga.fillout.com/nds-smart-url",
     pinned: false,
   },
@@ -204,39 +190,47 @@ const resources = [
     description: "Spotify 아티스트, 릴리스 및 성과 관리",
     category: "Partner Systems",
     type: "PARTNER",
-    status: "LOGIN",
     url: "https://artists.spotify.com/home",
     pinned: true,
+    theme: "spotify",
   },
-  {
-    id: "yg-plus-clas",
-    name: "YG PLUS CLAS",
-    description: "YG PLUS CLAS 파트너 포털",
-    category: "Partner Systems",
-    type: "PARTNER",
-    status: "LOGIN",
-    url: "http://clas.ygplus.com",
-    pinned: false,
-  },
-  {
-    id: "sony-music-artist-portal",
-    name: "Sony Music Entertainment Artist Portal",
-    description: "Sony Music Entertainment 아티스트·파트너 포털",
-    category: "Partner Systems",
-    type: "PARTNER",
-    status: "LOGIN",
-    url: "https://sme-artistportal.com/login?returnUrl=%2F",
-    pinned: false,
-  },
+ {
+  id: "yg-plus-clas",
+  name: "YG PLUS CLAS",
+  description: "YG PLUS CLAS 파트너 포털",
+  category: "Partner Systems",
+  type: "PARTNER",
+  url: "http://clas.ygplus.com",
+  pinned: false,
+},
+{
+  id: "leeway-music-media",
+  name: "Leeway Music & Media",
+  description: "리웨이뮤직앤미디어 파트너 시스템",
+  category: "Partner Systems",
+  type: "PARTNER",
+  url: "https://leeway.cuomusic.co.kr/musicgate/login.php",
+  pinned: false,
+},
+{
+  id: "sony-music-artist-portal",
+  name: "Sony Music Entertainment Artist Portal",
+  description: "Sony Music Entertainment 아티스트·파트너 포털",
+  category: "Partner Systems",
+  type: "PARTNER",
+  url: "https://sme-artistportal.com/login?returnUrl=%2F",
+  pinned: false,
+  theme: "sony",
+},
   {
     id: "flo-mcp",
     name: "FLO MCP",
     description: "FLO 파트너 운영 시스템",
     category: "Partner Systems",
     type: "PARTNER",
-    status: "LOGIN",
     url: "https://mcp.music-flo.com/login",
     pinned: false,
+    theme: "flo",
   },
   {
     id: "genie-kola",
@@ -244,9 +238,9 @@ const resources = [
     description: "Genie 파트너 운영 시스템",
     category: "Partner Systems",
     type: "PARTNER",
-    status: "LOGIN",
     url: "https://kola.geniemusic.co.kr/login/login",
     pinned: false,
+    theme: "genie",
   },
   {
     id: "bugs-partners",
@@ -254,9 +248,9 @@ const resources = [
     description: "Bugs 파트너 운영 시스템",
     category: "Partner Systems",
     type: "PARTNER",
-    status: "LOGIN",
     url: "https://partners.bugs.co.kr/index",
     pinned: false,
+    theme: "bugs",
   },
   {
     id: "mound-media",
@@ -264,7 +258,6 @@ const resources = [
     description: "Mound Media 파트너 포털",
     category: "Partner Systems",
     type: "PARTNER",
-    status: "LOGIN",
     url: "https://partner.moundmedia.net/",
     pinned: false,
   },
@@ -274,7 +267,6 @@ const resources = [
     description: "유통 및 파트너 업무 시스템",
     category: "Partner Systems",
     type: "PARTNER",
-    status: "LOGIN",
     url: "https://imlb.co.kr/login",
     pinned: false,
   },
@@ -284,7 +276,6 @@ const resources = [
     description: "교보문고 파트너 시스템",
     category: "Partner Systems",
     type: "PARTNER",
-    status: "LOGIN",
     url: "https://partner.kyobobook.co.kr/login",
     pinned: false,
   },
@@ -294,7 +285,6 @@ const resources = [
     description: "한국음악저작권협회 저작권 업무 시스템",
     category: "Partner Systems",
     type: "RIGHTS",
-    status: "LOGIN",
     url: "https://www.komca.or.kr/CTLJSP",
     pinned: false,
   },
@@ -304,7 +294,6 @@ const resources = [
     description: "유통 관련 인증 및 파트너 접근 시스템",
     category: "Partner Systems",
     type: "PARTNER",
-    status: "LOGIN",
     url: "https://login.distroauth.com/u/login?state=hqFo2SB2dVdYMHAxRUdkV244Vjc4NnVwUl92bkg3eFJSdkZUOaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHYySXQ0WlpiZ3VPaTlOd3JPVGt2emVZc21iV1RzX051o2NpZNkgbTlxZ0RHWWh0bG1BMnEzSlIxN2VxaTlUblNzYmp6c1Klb3JnaWS0b3JnXzVpd3pIOFRqVkdmSWtvOG6nb3JnbmFtZadvcmNoYXJk",
     pinned: false,
   },
@@ -315,7 +304,6 @@ const resources = [
     description: "대용량 파일 전송",
     category: "Work Utilities",
     type: "UTILITY",
-    status: "OPEN",
     url: "https://wetransfer.com/",
     pinned: true,
   },
@@ -325,7 +313,6 @@ const resources = [
     description: "전자계약 및 전자서명",
     category: "Work Utilities",
     type: "UTILITY",
-    status: "LOGIN",
     url: "https://app.modusign.co.kr/authentication/signin",
     pinned: true,
   },
@@ -335,7 +322,6 @@ const resources = [
     description: "기타 업무 시스템",
     category: "Work Utilities",
     type: "UTILITY",
-    status: "LOGIN",
     url: "http://ogame.co.kr/member/login",
     pinned: false,
   },
@@ -351,15 +337,13 @@ const categoryOrder = [
   "Work Utilities",
 ];
 
-const cardThemes = {
+const typeThemes = {
   "SEORO TOOL": {
     background: "#f1f3fb",
     border: "#ccd5f2",
     accent: "#405ba8",
     badgeBackground: "#dde4f8",
     badgeText: "#294381",
-    buttonBackground: "#405ba8",
-    buttonText: "#ffffff",
   },
   DSP: {
     background: "#f0f6f1",
@@ -367,8 +351,6 @@ const cardThemes = {
     accent: "#2f7d4b",
     badgeBackground: "#dceee0",
     badgeText: "#24623b",
-    buttonBackground: "#2f7d4b",
-    buttonText: "#ffffff",
   },
   CATALOG: {
     background: "#fdf6ea",
@@ -376,8 +358,6 @@ const cardThemes = {
     accent: "#9a681f",
     badgeBackground: "#f5e7ca",
     badgeText: "#7b5013",
-    buttonBackground: "#9a681f",
-    buttonText: "#ffffff",
   },
   PARTNER: {
     background: "#f6f1f7",
@@ -385,8 +365,6 @@ const cardThemes = {
     accent: "#7d4f8b",
     badgeBackground: "#ebdced",
     badgeText: "#633a70",
-    buttonBackground: "#7d4f8b",
-    buttonText: "#ffffff",
   },
   RIGHTS: {
     background: "#f8f2ee",
@@ -394,8 +372,6 @@ const cardThemes = {
     accent: "#9a5b35",
     badgeBackground: "#f0dfd3",
     badgeText: "#7a4425",
-    buttonBackground: "#9a5b35",
-    buttonText: "#ffffff",
   },
   UTILITY: {
     background: "#f3f4f5",
@@ -403,19 +379,95 @@ const cardThemes = {
     accent: "#55616a",
     badgeBackground: "#e7ebed",
     badgeText: "#424c53",
-    buttonBackground: "#55616a",
-    buttonText: "#ffffff",
   },
 };
 
-const defaultCardTheme = {
+const serviceThemes = {
+  apple: {
+    background: "#fff2f5",
+    border: "#f0cbd5",
+    accent: "#d84c70",
+    badgeBackground: "#ffe0e8",
+    badgeText: "#a92b4c",
+  },
+  spotify: {
+    background: "#effaf2",
+    border: "#bee6c9",
+    accent: "#1f8d4e",
+    badgeBackground: "#d9f3e1",
+    badgeText: "#176f3d",
+  },
+  youtube: {
+    background: "#fff2f2",
+    border: "#f0c6c6",
+    accent: "#ca3e3e",
+    badgeBackground: "#fde0e0",
+    badgeText: "#a32d2d",
+  },
+  tidal: {
+    background: "#f3f3f3",
+    border: "#d5d5d5",
+    accent: "#303030",
+    badgeBackground: "#e7e7e7",
+    badgeText: "#202020",
+  },
+  amazon: {
+    background: "#f0f7fc",
+    border: "#c5deef",
+    accent: "#397fac",
+    badgeBackground: "#dceef9",
+    badgeText: "#2c6388",
+  },
+  melon: {
+    background: "#effaf9",
+    border: "#c3e7e1",
+    accent: "#208f83",
+    badgeBackground: "#d8f2ed",
+    badgeText: "#176f65",
+  },
+  genie: {
+    background: "#f3f0ff",
+    border: "#d8cef1",
+    accent: "#6950b5",
+    badgeBackground: "#e6dff9",
+    badgeText: "#503a94",
+  },
+  bugs: {
+    background: "#fff5ec",
+    border: "#f0d3b2",
+    accent: "#c67428",
+    badgeBackground: "#fae3ca",
+    badgeText: "#9f581a",
+  },
+  vibe: {
+    background: "#f5f2fc",
+    border: "#ded4f1",
+    accent: "#7752aa",
+    badgeBackground: "#e9e1f8",
+    badgeText: "#5d3d8d",
+  },
+  flo: {
+    background: "#f2f7ff",
+    border: "#cbdbf1",
+    accent: "#3d68ab",
+    badgeBackground: "#dce8fa",
+    badgeText: "#2f528a",
+  },
+  sony: {
+    background: "#f2f6ff",
+    border: "#cad8f2",
+    accent: "#315ca8",
+    badgeBackground: "#dce7fb",
+    badgeText: "#26498a",
+  },
+};
+
+const defaultTheme = {
   background: "#ffffff",
   border: "#d8d8d2",
   accent: "#171717",
   badgeBackground: "#ebebe7",
   badgeText: "#686866",
-  buttonBackground: "#171717",
-  buttonText: "#ffffff",
 };
 
 const state = {
@@ -440,75 +492,52 @@ function normalizeText(value) {
   return value.toLocaleLowerCase("ko-KR").trim();
 }
 
-function getSearchableText(resource) {
-  return [
-    resource.name,
-    resource.description,
-    resource.category,
-    resource.type,
-    resource.status,
-  ]
-    .join(" ")
-    .toLocaleLowerCase("ko-KR");
-}
-
 function getFilteredResources() {
-  const normalizedSearchTerm = normalizeText(state.searchTerm);
+  const keyword = normalizeText(state.searchTerm);
 
   return resources.filter((resource) => {
     const matchesCategory =
       state.activeCategory === "All" || resource.category === state.activeCategory;
 
-    const matchesSearch =
-      !normalizedSearchTerm ||
-      getSearchableText(resource).includes(normalizedSearchTerm);
+    const searchableText = [
+      resource.name,
+      resource.description,
+      resource.category,
+      resource.type,
+    ]
+      .join(" ")
+      .toLocaleLowerCase("ko-KR");
 
-    return matchesCategory && matchesSearch;
+    return matchesCategory && (!keyword || searchableText.includes(keyword));
   });
 }
 
-function applyCardTheme(cardElement, type) {
-  const theme = cardThemes[type] ?? defaultCardTheme;
+function applyTheme(card, resource) {
+  const theme =
+    (resource.theme && serviceThemes[resource.theme]) ||
+    typeThemes[resource.type] ||
+    defaultTheme;
 
-  cardElement.style.setProperty("--card-bg", theme.background);
-  cardElement.style.setProperty("--card-border", theme.border);
-  cardElement.style.setProperty("--card-accent", theme.accent);
-  cardElement.style.setProperty("--card-badge-bg", theme.badgeBackground);
-  cardElement.style.setProperty("--card-badge-text", theme.badgeText);
-  cardElement.style.setProperty("--card-button-bg", theme.buttonBackground);
-  cardElement.style.setProperty("--card-button-text", theme.buttonText);
+  card.style.setProperty("--card-bg", theme.background);
+  card.style.setProperty("--card-border", theme.border);
+  card.style.setProperty("--card-accent", theme.accent);
+  card.style.setProperty("--card-badge-bg", theme.badgeBackground);
+  card.style.setProperty("--card-badge-text", theme.badgeText);
 }
 
-function createResourceCard(resource) {
+function createCard(resource) {
   const fragment = elements.cardTemplate.content.cloneNode(true);
-  const cardElement = fragment.querySelector(".resource-card");
-  const badge = fragment.querySelector(".resource-badge");
-  const status = fragment.querySelector(".resource-status");
-  const name = fragment.querySelector(".resource-name");
-  const description = fragment.querySelector(".resource-description");
-  const primaryLink = fragment.querySelector(".primary-link");
-  const secondaryLink = fragment.querySelector(".secondary-link");
+  const card = fragment.querySelector(".resource-card");
 
-  applyCardTheme(cardElement, resource.type);
+  applyTheme(card, resource);
 
-  badge.textContent = resource.type;
-  status.textContent = resource.status;
-  status.dataset.status = resource.status;
+  card.href = resource.url;
+  card.setAttribute("aria-label", `${resource.name} 열기 (새 탭)`);
 
-  name.textContent = resource.name;
-  description.textContent = resource.description;
-
-  primaryLink.href = resource.url;
-  primaryLink.setAttribute("aria-label", `${resource.name} 열기 (새 탭)`);
-
-  if (resource.githubUrl) {
-    secondaryLink.href = resource.githubUrl;
-    secondaryLink.setAttribute(
-      "aria-label",
-      `${resource.name} GitHub 저장소 열기 (새 탭)`,
-    );
-    secondaryLink.hidden = false;
-  }
+  fragment.querySelector(".resource-badge").textContent = resource.type;
+  fragment.querySelector(".resource-name").textContent = resource.name;
+  fragment.querySelector(".resource-description").textContent =
+    resource.description;
 
   return fragment;
 }
@@ -518,20 +547,18 @@ function renderFilters() {
 
   categoryOrder.forEach((category) => {
     const button = document.createElement("button");
-    const totalInCategory =
+    const count =
       category === "All"
         ? resources.length
         : resources.filter((resource) => resource.category === category).length;
 
     button.type = "button";
     button.className = "filter-button";
-    button.role = "tab";
-    button.dataset.category = category;
     button.setAttribute(
-      "aria-selected",
+      "aria-pressed",
       String(category === state.activeCategory),
     );
-    button.textContent = `${category} (${totalInCategory})`;
+    button.textContent = `${category} (${count})`;
 
     button.addEventListener("click", () => {
       state.activeCategory = category;
@@ -544,8 +571,10 @@ function renderFilters() {
   elements.filters.replaceChildren(fragment);
 }
 
-function renderPinnedResources(filteredResources) {
-  const pinnedResources = filteredResources.filter((resource) => resource.pinned);
+function renderPinned(resourcesToRender) {
+  const pinnedResources = resourcesToRender.filter(
+    (resource) => resource.pinned,
+  );
 
   if (pinnedResources.length === 0) {
     elements.pinnedGrid.hidden = true;
@@ -555,14 +584,14 @@ function renderPinnedResources(filteredResources) {
   const fragment = document.createDocumentFragment();
 
   pinnedResources.forEach((resource) => {
-    fragment.appendChild(createResourceCard(resource));
+    fragment.appendChild(createCard(resource));
   });
 
   elements.pinnedGrid.hidden = false;
   elements.pinnedGrid.replaceChildren(fragment);
 }
 
-function createResourceGroup(category, items) {
+function createGroup(category, resourcesToRender) {
   const group = document.createElement("section");
   const title = document.createElement("h3");
   const count = document.createElement("span");
@@ -574,38 +603,38 @@ function createResourceGroup(category, items) {
 
   title.textContent = category;
   count.className = "group-count";
-  count.textContent = `${items.length}`;
+  count.textContent = `${resourcesToRender.length}`;
   title.appendChild(count);
 
-  items.forEach((resource) => {
-    grid.appendChild(createResourceCard(resource));
+  resourcesToRender.forEach((resource) => {
+    grid.appendChild(createCard(resource));
   });
 
   group.append(title, grid);
   return group;
 }
 
-function renderResourceGroups(filteredResources) {
-  if (filteredResources.length === 0) {
+function renderGroups(resourcesToRender) {
+  if (resourcesToRender.length === 0) {
     elements.resourceGroups.replaceChildren();
     elements.emptyState.hidden = false;
     return;
   }
 
-  const categoriesToRender =
+  const categories =
     state.activeCategory === "All"
-      ? categoryOrder.filter((category) => category !== "All")
+      ? categoryOrder.slice(1)
       : [state.activeCategory];
 
   const fragment = document.createDocumentFragment();
 
-  categoriesToRender.forEach((category) => {
-    const categoryResources = filteredResources.filter(
+  categories.forEach((category) => {
+    const categoryResources = resourcesToRender.filter(
       (resource) => resource.category === category,
     );
 
     if (categoryResources.length > 0) {
-      fragment.appendChild(createResourceGroup(category, categoryResources));
+      fragment.appendChild(createGroup(category, categoryResources));
     }
   });
 
@@ -613,28 +642,24 @@ function renderResourceGroups(filteredResources) {
   elements.resourceGroups.replaceChildren(fragment);
 }
 
-function renderSummary(filteredResources) {
-  const count = filteredResources.length;
-  const hasSearch = Boolean(normalizeText(state.searchTerm));
-  const categoryLabel =
+function renderSummary(resourcesToRender) {
+  const count = resourcesToRender.length;
+  const category =
     state.activeCategory === "All" ? "전체 카테고리" : state.activeCategory;
 
   elements.resourceCount.textContent = `${count}개 항목`;
 
-  if (hasSearch) {
-    elements.summary.textContent = `"${state.searchTerm}" 검색 결과 ${count}개 · ${categoryLabel}`;
-    return;
-  }
-
-  elements.summary.textContent = `${categoryLabel}에서 ${count}개 항목을 표시하고 있습니다.`;
+  elements.summary.textContent = state.searchTerm.trim()
+    ? `"${state.searchTerm}" 검색 결과 ${count}개 · ${category}`
+    : `${category}에서 ${count}개 항목을 표시하고 있습니다.`;
 }
 
 function render() {
   const filteredResources = getFilteredResources();
 
   renderFilters();
-  renderPinnedResources(filteredResources);
-  renderResourceGroups(filteredResources);
+  renderPinned(filteredResources);
+  renderGroups(filteredResources);
   renderSummary(filteredResources);
 }
 
@@ -644,16 +669,6 @@ function resetFilters() {
   elements.search.value = "";
   render();
   elements.search.focus();
-}
-
-function setLastUpdated() {
-  const formatter = new Intl.DateTimeFormat("en-CA", {
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  });
-
-  elements.lastUpdated.textContent = `Last updated: ${formatter.format(new Date())}`;
 }
 
 elements.search.addEventListener("input", (event) => {
@@ -683,5 +698,13 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-setLastUpdated();
+elements.lastUpdated.textContent = `Last updated: ${new Intl.DateTimeFormat(
+  "en-CA",
+  {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  },
+).format(new Date())}`;
+
 render();
