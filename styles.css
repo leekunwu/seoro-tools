@@ -454,9 +454,14 @@ button {
     "opsz" 30;
 }
 
-.resource-logo {
+.resource-logo:not([hidden]) {
   display: block;
   object-fit: contain;
+}
+
+.resource-icon[hidden],
+.resource-logo[hidden] {
+  display: none;
 }
 
 .resource-card[data-type="DSP"] {
