@@ -23,9 +23,21 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="./" aria-label="SEORO TOOLS 홈">
-          SEORO TOOLS
-        </a>
+        <div class="header-brand-group">
+          <a class="brand" href="./" aria-label="SEORO TOOLS 홈">
+            SEORO TOOLS
+          </a>
+
+          <a
+            class="audioguy-link"
+            href="https://audioguy2026.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="AUDIOGUY 홈페이지 열기 (새 탭)"
+          >
+            AUDIOGUY ↗
+          </a>
+        </div>
 
         <a
           class="creator-pill"
@@ -106,7 +118,10 @@
         </div>
       </section>
 
-      <section class="resource-section quick-access-section" aria-labelledby="pinned-title">
+      <section
+        class="resource-section quick-access-section"
+        aria-labelledby="pinned-title"
+      >
         <div class="container">
           <div class="section-heading">
             <div>
@@ -162,7 +177,11 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span class="resource-name"></span>
+        <span class="card-default">
+          <img class="resource-logo" alt="" hidden />
+          <span class="resource-name"></span>
+        </span>
+
         <span class="resource-description" aria-hidden="true"></span>
       </a>
     </template>
