@@ -467,6 +467,7 @@ function applyTheme(card, type) {
 function createCard(resource) {
   const fragment = elements.cardTemplate.content.cloneNode(true);
   const card = fragment.querySelector(".resource-card");
+  const logo = fragment.querySelector(".resource-logo");
   const name = fragment.querySelector(".resource-name");
   const description = fragment.querySelector(".resource-description");
 
@@ -474,6 +475,11 @@ function createCard(resource) {
 
   card.href = resource.url;
   card.setAttribute("aria-label", `${resource.name} 열기 (새 탭)`);
+
+  if (resource.logo) {
+    logo.src = resource.logo;
+    logo.hidden = false;
+  }
 
   name.textContent = resource.name;
   description.textContent = resource.description;
