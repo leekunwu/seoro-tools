@@ -2,6 +2,7 @@ const resources = [
   {
     id: "universal-file-mapper",
     name: "Universal File Mapper",
+    icon: "folder_open",
     description: "서로 다른 파일 구조와 컬럼을 기준 형식에 맞게 매핑하는 업무용 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -11,6 +12,7 @@ const resources = [
   {
     id: "release-notes",
     name: "Release Notes",
+    icon: "article",
     description: "음악을 발매하는 팀의 알려진 이슈와 의도된 동작들",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -20,6 +22,7 @@ const resources = [
   {
     id: "multi-platform-music-search",
     name: "Multi-Platform Music Search",
+    icon: "travel_explore",
     description: "하나의 키워드로 주요 음악 플랫폼의 검색 결과를 빠르게 여는 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -29,6 +32,7 @@ const resources = [
   {
     id: "digital-settlement-mapper",
     name: "Digital Settlement Mapper",
+    icon: "account_tree",
     description: "디지털 정산 데이터를 통합 업무 형식으로 매핑하고 정리하는 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -38,6 +42,7 @@ const resources = [
   {
     id: "csv-encoding-fixer",
     name: "CSV Encoding Fixer",
+    icon: "data_object",
     description: "CSV 파일의 인코딩 문제를 확인하고 업무용 형식으로 변환하는 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -47,6 +52,7 @@ const resources = [
   {
     id: "audioguy-distribution-dashboard",
     name: "AUDIOGUY Distribution Dashboard",
+    icon: "dashboard",
     description: "AUDIOGUY 유통 카탈로그 및 운영 현황 대시보드",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -56,6 +62,7 @@ const resources = [
   {
     id: "settlement-consolidator",
     name: "Settlement Consolidator",
+    icon: "account_balance_wallet",
     description: "유통사 정산 원본을 월별 정산내역서로 취합·매핑·환율 반영·내보내기",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -65,6 +72,7 @@ const resources = [
   {
     id: "gmail-draft-composer",
     name: "Gmail Draft Composer",
+    icon: "drafts",
     description: "스프레드시트 연동 배치 초안 생성, 토큰 개인화 및 테스트 모드 지원",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -75,6 +83,7 @@ const resources = [
   {
     id: "apple-music",
     name: "Apple Music",
+    logo: "./assets/logos/apple-music.svg",
     description: "Apple Music 신작 및 글로벌 DSP 모니터링",
     category: "Global DSP",
     type: "DSP",
@@ -84,6 +93,7 @@ const resources = [
   {
     id: "spotify",
     name: "Spotify",
+    logo: "./assets/logos/spotify.svg",
     description: "Spotify 검색, 아티스트 및 릴리스 모니터링",
     category: "Global DSP",
     type: "DSP",
@@ -93,6 +103,7 @@ const resources = [
   {
     id: "youtube-music",
     name: "YouTube Music",
+    logo: "./assets/logos/youtube-music.svg",
     description: "YouTube Music 검색 및 서비스 모니터링",
     category: "Global DSP",
     type: "DSP",
@@ -102,6 +113,7 @@ const resources = [
   {
     id: "tidal",
     name: "TIDAL",
+    logo: "./assets/logos/tidal.svg",
     description: "TIDAL 카탈로그 및 글로벌 DSP 모니터링",
     category: "Global DSP",
     type: "DSP",
@@ -111,6 +123,7 @@ const resources = [
   {
     id: "amazon-music",
     name: "Amazon Music",
+    logo: "./assets/logos/amazon-music.svg",
     description: "Amazon Music 검색 및 카탈로그 확인",
     category: "Global DSP",
     type: "DSP",
@@ -121,6 +134,7 @@ const resources = [
   {
     id: "melon",
     name: "Melon",
+    logo: "./assets/logos/melon.svg",
     description: "멜론 검색 및 국내 DSP 모니터링",
     category: "Korea DSP",
     type: "DSP",
@@ -130,6 +144,7 @@ const resources = [
   {
     id: "genie",
     name: "Genie",
+    logo: "./assets/logos/genie.svg",
     description: "지니 검색 및 국내 DSP 모니터링",
     category: "Korea DSP",
     type: "DSP",
@@ -139,6 +154,7 @@ const resources = [
   {
     id: "bugs",
     name: "Bugs!",
+    logo: "./assets/logos/bugs.svg",
     description: "벅스 검색 및 국내 DSP 모니터링",
     category: "Korea DSP",
     type: "DSP",
@@ -148,6 +164,7 @@ const resources = [
   {
     id: "vibe",
     name: "VIBE",
+    logo: "./assets/logos/vibe.svg",
     description: "VIBE 신작 및 국내 DSP 모니터링",
     category: "Korea DSP",
     type: "DSP",
@@ -157,6 +174,7 @@ const resources = [
   {
     id: "flo",
     name: "FLO",
+    logo: "./assets/logos/flo.svg",
     description: "FLO 검색 및 국내 DSP 모니터링",
     category: "Korea DSP",
     type: "DSP",
@@ -167,6 +185,7 @@ const resources = [
   {
     id: "naxos-labels",
     name: "Naxos Labels",
+    logo: "./assets/logos/naxos-labels.svg",
     description: "Naxos Labels 유통 등록 및 카탈로그 운영 시스템",
     category: "Distribution Partners",
     type: "PARTNER",
@@ -176,6 +195,7 @@ const resources = [
   {
     id: "kakao-mlb",
     name: "Kakao MLB",
+    logo: "./assets/logos/kakao-mlb.svg",
     description: "Kakao Entertainment Music Licence Bank 유통 운영 시스템",
     category: "Distribution Partners",
     type: "PARTNER",
@@ -185,6 +205,7 @@ const resources = [
   {
     id: "genie-kola",
     name: "Genie KOLA",
+    logo: "./assets/logos/genie-kola.svg",
     description: "Genie 유통 등록 및 정산 확인 파트너 시스템",
     category: "Distribution Partners",
     type: "PARTNER",
@@ -194,6 +215,7 @@ const resources = [
   {
     id: "bugs-partners",
     name: "Bugs Partners",
+    logo: "./assets/logos/bugs-partners.svg",
     description: "Bugs 유통 등록 및 정산 확인 파트너 시스템",
     category: "Distribution Partners",
     type: "PARTNER",
@@ -203,6 +225,7 @@ const resources = [
   {
     id: "yg-plus-clas",
     name: "YG PLUS CLAS",
+    logo: "./assets/logos/yg-plus-clas.svg",
     description: "YG PLUS 유통 등록 및 정산 확인 파트너 시스템",
     category: "Distribution Partners",
     type: "PARTNER",
@@ -212,6 +235,7 @@ const resources = [
   {
     id: "flo-mcp",
     name: "FLO MCP",
+    logo: "./assets/logos/flo-mcp.svg",
     description: "FLO 유통 등록 및 정산 확인 파트너 시스템",
     category: "Distribution Partners",
     type: "PARTNER",
@@ -221,6 +245,7 @@ const resources = [
   {
     id: "fuga-catalog",
     name: "FUGA Catalog",
+    logo: "./assets/logos/fuga-catalog.svg",
     description: "FUGA 유통 등록, 카탈로그 및 정산 운영 시스템",
     category: "Distribution Partners",
     type: "PARTNER",
@@ -230,6 +255,7 @@ const resources = [
   {
     id: "the-orchard-workstation",
     name: "The Orchard Workstation",
+    logo: "./assets/logos/the-orchard-workstation.svg",
     description: "The Orchard 유통 등록, 카탈로그 및 정산 운영 시스템",
     category: "Distribution Partners",
     type: "PARTNER",
@@ -239,6 +265,7 @@ const resources = [
   {
     id: "sme-artist-portal",
     name: "SME Artist Portal",
+    logo: "./assets/logos/sme-artist-portal.svg",
     description: "Sony Music Entertainment 유통 등록 및 아티스트 파트너 포털",
     category: "Distribution Partners",
     type: "PARTNER",
@@ -248,6 +275,7 @@ const resources = [
   {
     id: "mound-media-partner",
     name: "Mound Media Partner",
+    logo: "./assets/logos/mound-media-partner.svg",
     description: "POCLANOS 파트너 시스템",
     category: "Distribution Partners",
     type: "PARTNER",
@@ -257,6 +285,7 @@ const resources = [
   {
     id: "leeway-music-media",
     name: "Leeway Music & Media",
+    logo: "./assets/logos/leeway-music-media.svg",
     description: "리웨이뮤직앤미디어 유통 등록 및 정산 확인 파트너 시스템",
     category: "Distribution Partners",
     type: "PARTNER",
@@ -266,6 +295,7 @@ const resources = [
   {
     id: "ogam-ent",
     name: "OGAM ENT",
+    logo: "./assets/logos/ogam-ent.svg",
     description: "오감엔터테인먼트 서비스",
     category: "Distribution Partners",
     type: "PARTNER",
@@ -275,6 +305,7 @@ const resources = [
   {
     id: "kyobo-partner",
     name: "Kyobo Partner",
+    logo: "./assets/logos/kyobo-partner.svg",
     description: "교보문고 유통 등록 및 정산 확인 파트너 시스템",
     category: "Distribution Partners",
     type: "PARTNER",
@@ -285,6 +316,7 @@ const resources = [
   {
     id: "nds-score",
     name: "NDS Score",
+    logo: "./assets/logos/nds-score.svg",
     description: "낙소스 피칭 툴/서비스",
     category: "Artist & Marketing",
     type: "MARKETING",
@@ -294,6 +326,7 @@ const resources = [
   {
     id: "nds-smart-url",
     name: "NDS Smart URL",
+    logo: "./assets/logos/nds-smart-url.svg",
     description: "found.ee 기반 낙소스·FUGA 스마트 URL 생성 서비스",
     category: "Artist & Marketing",
     type: "MARKETING",
@@ -303,6 +336,7 @@ const resources = [
   {
     id: "apple-music-for-artists",
     name: "Apple Music for Artists",
+    logo: "./assets/logos/apple-music-for-artists.svg",
     description: "Apple Music 아티스트 및 카탈로그 관리 시스템",
     category: "Artist & Marketing",
     type: "MARKETING",
@@ -312,6 +346,7 @@ const resources = [
   {
     id: "spotify-for-artists",
     name: "Spotify for Artists",
+    logo: "./assets/logos/spotify-for-artists.svg",
     description: "Spotify 아티스트, 릴리스 및 성과 관리",
     category: "Artist & Marketing",
     type: "MARKETING",
@@ -322,6 +357,7 @@ const resources = [
   {
     id: "wetransfer",
     name: "WeTransfer",
+    logo: "./assets/logos/wetransfer.svg",
     description: "대용량 파일 전송",
     category: "Other & Rights",
     type: "UTILITY",
@@ -331,6 +367,7 @@ const resources = [
   {
     id: "modusign",
     name: "Modusign",
+    logo: "./assets/logos/modusign.svg",
     description: "전자계약 및 전자서명",
     category: "Other & Rights",
     type: "UTILITY",
@@ -340,6 +377,7 @@ const resources = [
   {
     id: "komca",
     name: "KOMCA",
+    logo: "./assets/logos/komca.svg",
     description: "한국음악저작권협회 저작권 업무 시스템",
     category: "Other & Rights",
     type: "RIGHTS",
@@ -349,6 +387,7 @@ const resources = [
   {
     id: "mims",
     name: "MIMS",
+    logo: "./assets/logos/mims.svg",
     description: "RIAK ISRC 및 UCI 발급 시스템",
     category: "Other & Rights",
     type: "RIGHTS",
@@ -358,6 +397,7 @@ const resources = [
   {
     id: "musicfetch",
     name: "Musicfetch",
+    logo: "./assets/logos/musicfetch.svg",
     description: "UPC, ISRC, YouTube Channel ID 및 음악 메타데이터 조회",
     category: "Other & Rights",
     type: "UTILITY",
@@ -467,6 +507,7 @@ function applyTheme(card, type) {
 function createCard(resource) {
   const fragment = elements.cardTemplate.content.cloneNode(true);
   const card = fragment.querySelector(".resource-card");
+  const icon = fragment.querySelector(".resource-icon");
   const logo = fragment.querySelector(".resource-logo");
   const name = fragment.querySelector(".resource-name");
   const description = fragment.querySelector(".resource-description");
@@ -479,6 +520,9 @@ function createCard(resource) {
   if (resource.logo) {
     logo.src = resource.logo;
     logo.hidden = false;
+  } else if (resource.icon) {
+    icon.textContent = resource.icon;
+    icon.hidden = false;
   }
 
   name.textContent = resource.name;
@@ -646,7 +690,6 @@ elements.lastUpdated.textContent = `Last updated: ${new Intl.DateTimeFormat(
   {
     year: "numeric",
     month: "2-digit",
-    day: "2-digit",
   },
 ).format(new Date())}`;
 
