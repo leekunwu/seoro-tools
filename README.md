@@ -28,8 +28,24 @@
 - **Global DSP**: Apple Music, Spotify, YouTube Music, TIDAL, Amazon Music
 - **Korea DSP**: Melon, Genie, Bugs!, VIBE, FLO
 - **Distribution & Catalog**: Naxos Labels, FUGA Catalog, NDS Score, NDS Smart URL
-- **Partner Systems**: Spotify for Artists, FLO MCP, Genie KOLA, Bugs Partners, KOMCA, IMLB, Kyobo Partner, Mound Media Partner, DistroAuth
+- **Partner Systems**: Spotify for Artists, YG PLUS CLAS, Sony Music Entertainment Artist Portal, FLO MCP, Genie KOLA, Bugs Partners, KOMCA, IMLB, Kyobo Partner, Mound Media Partner, DistroAuth
 - **Work Utilities**: WeTransfer, Modusign, 기타 업무 시스템
+
+### Partner Systems
+
+| Service | Description | Link |
+| --- | --- | --- |
+| Spotify for Artists | Spotify 아티스트, 릴리스 및 성과 관리 | [Open](https://artists.spotify.com/home) |
+| YG PLUS CLAS | YG PLUS CLAS 파트너 포털 | [Open](http://clas.ygplus.com) |
+| Sony Music Entertainment Artist Portal | Sony Music Entertainment 아티스트·파트너 포털 | [Open](https://sme-artistportal.com/login?returnUrl=%2F) |
+| FLO MCP | FLO 파트너 운영 시스템 | [Open](https://mcp.music-flo.com/login) |
+| Genie KOLA | Genie 파트너 운영 시스템 | [Open](https://kola.geniemusic.co.kr/login/login) |
+| Bugs Partners | Bugs 파트너 운영 시스템 | [Open](https://partners.bugs.co.kr/index) |
+| Mound Media Partner | Mound Media 파트너 포털 | [Open](https://partner.moundmedia.net/) |
+| IMLB | 유통 및 파트너 업무 시스템 | [Open](https://imlb.co.kr/login) |
+| Kyobo Partner | 교보문고 파트너 시스템 | [Open](https://partner.kyobobook.co.kr/login) |
+| KOMCA | 한국음악저작권협회 저작권 업무 시스템 | [Open](https://www.komca.or.kr/CTLJSP) |
+| DistroAuth | 유통 관련 인증 및 파트너 접근 시스템 | [Open](https://login.distroauth.com/u/login?state=hqFo2SB2dVdYMHAxRUdkV244Vjc4NnVwUl92bkg3eFJSdkZUOaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHYySXQ0WlpiZ3VPaTlOd3JPVGt2emVZc21iV1RzX051o2NpZNkgbTlxZ0RHWWh0bG1BMnEzSlIxN2VxaTlUblNzYmp6c1Klb3JnaWS0b3JnXzVpd3pIOFRqVkdmSWtvOG6nb3JnbmFtZadvcmNoYXJk) |
 
 ## Features
 
