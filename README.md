@@ -116,12 +116,14 @@
 
 ## Quick Access
 
-Quick Access는 현재 아래 8개 업무 시작점으로 구성합니다.
+Quick Access는 현재 아래 4개 업무 시작점으로 구성합니다.
 
-1. Universal File Mapper
-2. Digital Settlement Mapper
-3. AUDIOGUY Distribution Dashboard
-4. Settlement Consolidator
+1. AUDIOGUY Distribution Dashboard
+2. Multi-Platform Music Search
+3. NDS Score
+4. NDS Smart URL
+
+Quick Access에 표시할 항목은 `app.js`의 각 리소스에 `pinned: true`를 설정해 관리합니다. `pinned: true`인 항목은 정확히 4개로 유지하는 것을 권장합니다.
 
 Quick Access에 표시할 항목은 `app.js`의 각 리소스에 `pinned: true`를 설정해 관리합니다. `pinned: true`인 항목은 정확히 8개로 유지하는 것을 권장합니다.
 
