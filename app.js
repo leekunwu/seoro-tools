@@ -7,7 +7,7 @@ const resources = [
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://leekunwu.github.io/universal-file-mapper/",
-    pinned: true,
+    pinned: false,
   },
   {
     id: "release-notes",
@@ -27,7 +27,7 @@ const resources = [
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://leekunwu.github.io/Multi_Platform_Music_Search/",
-    pinned: false,
+    pinned: true,
   },
   {
     id: "digital-settlement-mapper",
@@ -37,7 +37,7 @@ const resources = [
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://leekunwu.github.io/digital-settlement-mapper/",
-    pinned: true,
+    pinned: false,
   },
   {
     id: "csv-encoding-fixer",
@@ -67,7 +67,7 @@ const resources = [
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://docs.google.com/spreadsheets/d/1iT99zK5b1_981bGJ17O37h_KwTxSA-mfhV8QqaUdYeA/edit?gid=1128828444#gid=1128828444",
-    pinned: true,
+    pinned: false,
   },
   {
     id: "gmail-draft-composer",
@@ -77,7 +77,7 @@ const resources = [
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://script.google.com/a/macros/audioguyrecords.com/s/AKfycbwHgPh4KwJc8KUFYs8ROZLC_qGiMHQKYEvQr7E9ux5DnRKKMjbLPlV7o2GDL7WwpliF/exec",
-    pinned: true,
+    pinned: false,
   },
 
   {
@@ -98,7 +98,7 @@ const resources = [
     category: "Global DSP",
     type: "DSP",
     url: "https://open.spotify.com/",
-    pinned: true,
+    pinned: false,
   },
   {
     id: "youtube-music",
@@ -139,7 +139,7 @@ const resources = [
     category: "Korea DSP",
     type: "DSP",
     url: "https://www.melon.com/index.htm",
-    pinned: true,
+    pinned: false,
   },
   {
     id: "genie",
@@ -270,7 +270,7 @@ const resources = [
     category: "Distribution Partners",
     type: "PARTNER",
     url: "https://login.distroauth.com/u/login?state=hqFo2SB2dVdYMHAxRUdkV244Vjc4NnVwUl92bkg3eFJSdkZUOaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHYySXQ0WlpiZ3VPaTlOd3JPVGt2emVZc21iV1RzX051o2NpZNkgbTlxZ0RHWWh0bG1BMnEzSlIxN2VxaTlUblNzYmp6c1Klb3JnaWS0b3JnXzVpd3pIOFRqVkdmSWtvOG6nb3JnbmFtZadvcmNoYXJk",
-    pinned: true,
+    pinned: false,
   },
   {
     id: "sme-artist-portal",
@@ -331,7 +331,7 @@ const resources = [
     category: "Artist & Marketing",
     type: "MARKETING",
     url: "https://ndsscore.softr.app/",
-    pinned: false,
+    pinned: true,
   },
   {
     id: "nds-smart-url",
@@ -341,7 +341,7 @@ const resources = [
     category: "Artist & Marketing",
     type: "MARKETING",
     url: "https://fuga.fillout.com/nds-smart-url",
-    pinned: false,
+    pinned: true,
   },
   {
     id: "apple-music-for-artists",
