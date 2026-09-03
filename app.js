@@ -253,6 +253,16 @@ const resources = [
     pinned: false,
   },
   {
+    id: "too-lost",
+    name: "Too Lost",
+    logo: "./assets/logos/too-lost.svg",
+    description: "글로벌 음원 유통, 카탈로그 관리, 전달 현황 및 정산 분석을 위한 유통 플랫폼",
+    category: "Distribution Partners",
+    type: "PARTNER",
+    url: "https://toolost.com/user-portal",
+    pinned: false,
+  },
+  {
     id: "the-orchard-workstation",
     name: "The Orchard Workstation",
     logo: "./assets/logos/the-orchard-workstation.svg",
