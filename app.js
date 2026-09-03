@@ -474,6 +474,7 @@ const elements = {
   filters: document.querySelector("#category-filters"),
   search: document.querySelector("#resource-search"),
   summary: document.querySelector("#search-result-summary"),
+  quickAccessSection: document.querySelector("#quick-access-section"),
   pinnedGrid: document.querySelector("#pinned-grid"),
   resourceGroups: document.querySelector("#resource-groups"),
   resourceCount: document.querySelector("#resource-count"),
@@ -672,9 +673,16 @@ function renderSummary(resourcesToRender) {
 
 function render() {
   const filteredResources = getFilteredResources();
+  const hasSearch = Boolean(state.searchTerm.trim());
 
   renderFilters();
-  renderPinned(filteredResources);
+
+  if (hasSearch) {
+    elements.quickAccessSection.hidden = true;
+  } else {
+    renderPinned(filteredResources);
+  }
+
   renderGroups(filteredResources);
   renderSummary(filteredResources);
 }
