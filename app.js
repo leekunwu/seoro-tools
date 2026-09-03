@@ -181,12 +181,11 @@ const resources = [
     url: "https://www.music-flo.com/",
     pinned: false,
   },
-
   {
     id: "naxos-labels",
-    name: "Naxos Labels",
+    name: "NDS",
     logo: "./assets/logos/naxos-labels.svg",
-    description: "Naxos Labels 유통 등록 및 카탈로그 운영 시스템",
+    description: "낙소스 유통 등록 및 카탈로그 운영 시스템",
     category: "Distribution Partners",
     type: "PARTNER",
     url: "https://labels.naxos.com/catalog/products/tiles",
@@ -256,7 +255,8 @@ const resources = [
     id: "too-lost",
     name: "Too Lost",
     logo: "./assets/logos/too-lost.svg",
-    description: "글로벌 음원 유통, 카탈로그 관리, 전달 현황 및 정산 분석을 위한 유통 플랫폼",
+    description:
+      "Too Lost 글로벌 음원 유통, 카탈로그 관리, 전달 현황 및 정산 분석을 위한 유통 플랫폼",
     category: "Distribution Partners",
     type: "PARTNER",
     url: "https://toolost.com/user-portal",
@@ -586,12 +586,13 @@ function renderFilters() {
 }
 
 function renderPinned(resourcesToRender) {
-  const pinnedResources = resourcesToRender.filter(
-    (resource) => resource.pinned,
-  );
+  const pinnedResources = resourcesToRender
+    .filter((resource) => resource.pinned)
+    .slice(0, 4);
 
   if (pinnedResources.length === 0) {
     elements.pinnedGrid.hidden = true;
+    elements.quickAccessSection.hidden = true;
     return;
   }
 
@@ -602,6 +603,7 @@ function renderPinned(resourcesToRender) {
   });
 
   elements.pinnedGrid.hidden = false;
+  elements.quickAccessSection.hidden = false;
   elements.pinnedGrid.replaceChildren(fragment);
 }
 
