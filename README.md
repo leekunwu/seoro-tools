@@ -122,10 +122,6 @@ Quick Access는 현재 아래 8개 업무 시작점으로 구성합니다.
 2. Digital Settlement Mapper
 3. AUDIOGUY Distribution Dashboard
 4. Settlement Consolidator
-5. Gmail Draft Composer
-6. Spotify
-7. Melon
-8. The Orchard Workstation
 
 Quick Access에 표시할 항목은 `app.js`의 각 리소스에 `pinned: true`를 설정해 관리합니다. `pinned: true`인 항목은 정확히 8개로 유지하는 것을 권장합니다.
 
