@@ -109,7 +109,16 @@ const resources = [
     url: "https://script.google.com/a/macros/audioguyrecords.com/s/AKfycbwHgPh4KwJc8KUFYs8ROZLC_qGiMHQKYEvQr7E9ux5DnRKKMjbLPlV7o2GDL7WwpliF/exec",
     pinned: false,
   },
-
+  {
+    id: "neoklavier-operator",
+    name: "NeoKlavier Operator",
+    icon: "piano",
+    description: "Yamaha Disklavier 녹음을 위한 로컬 MIDI 플레이리스트 및 외부 MIDI 장치 운영 도구",
+    category: "SEORO TOOLS",
+    type: "SEORO TOOL",
+    url: "https://leekunwu.github.io/NeoKlavier-Operator/",
+    pinned: false,
+  },
   {
     id: "apple-music",
     name: "Apple Music",
