@@ -55,6 +55,8 @@
 | AUDIOGUY Distribution Dashboard | AUDIOGUY 유통 카탈로그 및 운영 현황 대시보드 | [Open](https://sound360music.netlify.app/) |
 | Settlement Consolidator | 유통사 정산 원본을 월별 정산내역서로 취합·매핑·환율 반영·내보내기 | [Open](https://docs.google.com/spreadsheets/d/1iT99zK5b1_981bGJ17O37h_KwTxSA-mfhV8QqaUdYeA/edit?gid=1128828444#gid=1128828444) |
 | Gmail Draft Composer | 스프레드시트 연동 배치 초안 생성, 토큰 개인화 및 테스트 모드 지원 | [Open](https://script.google.com/a/macros/audioguyrecords.com/s/AKfycbwHgPh4KwJc8KUFYs8ROZLC_qGiMHQKYEvQr7E9ux5DnRKKMjbLPlV7o2GDL7WwpliF/exec) |
+| NDS Tracklist Parser | 복사한 트랙리스트에서 Stereo·Dolby ISRC를 분리해 표 형태로 정리하는 로컬 도구 | [Open](https://leekunwu.github.io/NDS-Tracklist-Parser/) |
+| MIMS XML Normalizer | MIMS XML을 트랙 단위 표로 정규화하고 QC·편집·TSV/CSV 내보내기를 지원하는 로컬 도구 | [Open](https://leekunwu.github.io/MIMS-XML-Normalizer/) |
 
 ### Global DSP
 
@@ -203,6 +205,8 @@ SEORO TOOLS의 내부 도구 8개는 SVG 대신 Google Material Symbols를 사�
 | Universal File Mapper | `folder_open` |
 | Release Notes | `article` |
 | Multi-Platform Music Search | `travel_explore` |
+| NDS Tracklist Parser | `format_list_numbered` |
+| MIMS XML Normalizer | `code` |
 | Digital Settlement Mapper | `account_tree` |
 | CSV Encoding Fixer | `data_object` |
 | AUDIOGUY Distribution Dashboard | `dashboard` |
