@@ -50,6 +50,16 @@ const resources = [
     pinned: false,
   },
   {
+    id: "mims-xml-normalizer",
+    name: "MIMS XML Normalizer",
+    icon: "code",
+    description: "MIMS XML을 트랙 단위 표로 정규화하고 QC·편집·TSV/CSV 내보내기를 지원하는 로컬 도구",
+    category: "SEORO TOOLS",
+    type: "SEORO TOOL",
+    url: "https://leekunwu.github.io/MIMS-XML-Normalizer/",
+    pinned: false,
+  },
+  {
     id: "digital-settlement-mapper",
     name: "Digital Settlement Mapper",
     icon: "account_tree",
