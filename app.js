@@ -26,7 +26,7 @@ const resources = [
     description: "하나의 키워드로 주요 음악 플랫폼의 검색 결과를 빠르게 여는 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
-    url: "https://leekunwu.github.io/Multi_Platform_Music_Search/",
+    url: "https://leekunwu.github.io/Multi-Platform-Music-Search/",
     pinned: true,
   },
   {
