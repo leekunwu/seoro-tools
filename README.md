@@ -49,7 +49,7 @@
 | --- | --- | --- |
 | Universal File Mapper | 서로 다른 파일 구조와 컬럼을 기준 형식에 맞게 매핑하는 업무용 도구 | [Open](https://leekunwu.github.io/universal-file-mapper/) |
 | Release Notes | 음악을 발매하는 팀의 알려진 이슈와 의도된 동작들 | [Open](https://leekunwu.github.io/release-notes/) |
-| Multi-Platform Music Search | 하나의 키워드로 주요 음악 플랫폼의 검색 결과를 빠르게 여는 도구 | [Open](https://leekunwu.github.io/Multi_Platform_Music_Search/) |
+| Multi-Platform Music Search | 하나의 키워드로 주요 음악 플랫폼의 검색 결과를 빠르게 여는 도구 | [Open](https://leekunwu.github.io/Multi-Platform-Music-Search/) |
 | Digital Settlement Mapper | 디지털 정산 데이터를 통합 업무 형식으로 매핑하고 정리하는 도구 | [Open](https://leekunwu.github.io/digital-settlement-mapper/) |
 | CSV Encoding Fixer | CSV 파일의 인코딩 문제를 확인하고 업무용 형식으로 변환하는 도구 | [Open](https://leekunwu.github.io/csv-encoding-fixer/) |
 | AUDIOGUY Distribution Dashboard | AUDIOGUY 유통 카탈로그 및 운영 현황 대시보드 | [Open](https://sound360music.netlify.app/) |
