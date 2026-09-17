@@ -17,7 +17,7 @@
 
 - 6개 업무 카테고리 기반 리소스 탐색
 - 도구명, 설명, 카테고리, 유형 기준 실시간 검색
-- 자주 사용하는 8개 업무 시작점을 모은 Quick Access
+- 자주 사용하는 4개 업무 시작점을 모은 Quick Access
 - 카드 전체 클릭으로 외부 도구와 서비스를 새 탭에서 실행
 - 카드 기본 상태에서는 아이콘 또는 SVG 로고와 서비스명 표시
 - 데스크톱 hover 및 키보드 focus 시 다크 카드 전환과 설명 표시
@@ -128,8 +128,6 @@ Quick Access는 현재 아래 4개 업무 시작점으로 구성합니다.
 
 Quick Access에 표시할 항목은 `app.js`의 각 리소스에 `pinned: true`를 설정해 관리합니다. `pinned: true`인 항목은 정확히 4개로 유지하는 것을 권장합니다.
 
-Quick Access에 표시할 항목은 `app.js`의 각 리소스에 `pinned: true`를 설정해 관리합니다. `pinned: true`인 항목은 정확히 8개로 유지하는 것을 권장합니다.
-
 ## Project Structure
 
 ```text
@@ -199,7 +197,7 @@ Other & Rights
 
 ## Internal Tool Icons
 
-SEORO TOOLS의 내부 도구 8개는 SVG 대신 Google Material Symbols를 사용합니다.
+SEORO TOOLS의 내부 도구 11개는 SVG 대신 Google Material Symbols를 사용합니다.
 
 | Tool | Material Symbol |
 | --- | --- |
@@ -355,7 +353,7 @@ https://leekunwu.github.io/seoro-tools/
 - [ ] `id`가 다른 리소스와 중복되지 않는가
 - [ ] 서비스명, 설명, 카테고리, 유형, URL이 정확한가
 - [ ] `resources[].category`와 `categoryOrder`의 카테고리명이 일치하는가
-- [ ] Quick Access의 `pinned: true` 항목이 정확히 8개인가
+- [ ] Quick Access의 `pinned: true` 항목이 정확히 4개인가
 - [ ] 검색과 카테고리 필터에서 새 항목이 표시되는가
 
 ### Links and Interaction
