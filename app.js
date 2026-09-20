@@ -100,6 +100,16 @@ const resources = [
     pinned: false,
   },
   {
+    id: "seoro-catalog-portal",
+    name: "SEORO Catalog Portal",
+    icon: "manage_search",
+    description: "자사 디지털 유통 카탈로그를 통합 검색하고 음원 메타데이터를 빠르게 조회하는 내부 도구",
+    category: "SEORO TOOLS",
+    type: "SEORO TOOL",
+    url: "https://script.google.com/a/macros/audioguyrecords.com/s/AKfycbzJwn64cbcw9Z0oAkQFa5HrjZcJomopicesE1x-TN8G_KnnjxeV3pirjt_o0kXD60ib/exec",
+    pinned: false,
+  },
+  {
     id: "neoklavier-operator",
     name: "NeoKlavier Operator",
     icon: "piano",
