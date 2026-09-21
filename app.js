@@ -566,10 +566,33 @@ function createCard(resource) {
 
   card.href = resource.url;
   card.dataset.type = resource.type;
-  card.setAttribute("aria-label", `${resource.name} 열기 (새 탭)`);
 
-  name.textContent = resource.name;
-  description.textContent = resource.description;
+  card.setAttribute(
+    "aria-label",
+    resource.id === "seoro-catalog-portal"
+      ? `${resource.name} 열기 (새 창)`
+      : `${resource.name} 열기 (새 탭)`,
+  );
+
+  if (resource.id === "seoro-catalog-portal") {
+    card.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      const popup = window.open(
+        resource.url,
+        "seoroCatalogPortal",
+        "popup,width=1440,height=900,resizable=yes,scrollbars=yes,noopener,noreferrer",
+      );
+
+      if (popup) {
+        popup.opener = null;
+        popup.focus();
+        return;
+      }
+
+      window.open(resource.url, "_blank", "noopener,noreferrer");
+    });
+  }
 
   if (resource.logo) {
     logo.src = resource.logo;
@@ -592,6 +615,9 @@ function createCard(resource) {
     icon.textContent = resource.icon;
     icon.hidden = false;
   }
+
+  name.textContent = resource.name;
+  description.textContent = resource.description;
 
   return fragment;
 }
