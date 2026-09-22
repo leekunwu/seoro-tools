@@ -577,20 +577,17 @@ function createCard(resource) {
   if (resource.id === "seoro-catalog-portal") {
     card.addEventListener("click", (event) => {
       event.preventDefault();
-
+  
       const popup = window.open(
         resource.url,
         "seoroCatalogPortal",
-        "popup,width=1440,height=900,resizable=yes,scrollbars=yes,noopener,noreferrer",
+        "popup,width=1440,height=900,resizable=yes,scrollbars=yes",
       );
-
+  
       if (popup) {
         popup.opener = null;
         popup.focus();
-        return;
       }
-
-      window.open(resource.url, "_blank", "noopener,noreferrer");
     });
   }
 
