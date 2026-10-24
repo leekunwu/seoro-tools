@@ -100,13 +100,13 @@ const resources = [
     pinned: false,
   },
   {
-    id: "seoro-catalog-portal",
-    name: "SEORO Catalog Portal",
+    id: "audioguys-music-catalog-portal",
+    name: "Audioguys Music Catalog Portal",
     icon: "manage_search",
     description: "자사 디지털 유통 카탈로그를 통합 검색하고 음원 메타데이터를 빠르게 조회하는 내부 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
-    url: "https://script.google.com/a/macros/audioguyrecords.com/s/AKfycbzJwn64cbcw9Z0oAkQFa5HrjZcJomopicesE1x-TN8G_KnnjxeV3pirjt_o0kXD60ib/exec",
+    url: "https://script.google.com/a/macros/audioguyrecords.com/s/AKfycbzY8VuNViIpHGGXfzsElD4rCZS17dJuaClwkUQXuMtaHvkSfhBlok3ysJF6peI7O2-3/exec",
     pinned: false,
   },
   {
@@ -569,18 +569,18 @@ function createCard(resource) {
 
   card.setAttribute(
     "aria-label",
-    resource.id === "seoro-catalog-portal"
+    resource.id === "audioguys-music-catalog-portal"
       ? `${resource.name} 열기 (새 창)`
       : `${resource.name} 열기 (새 탭)`,
   );
 
-  if (resource.id === "seoro-catalog-portal") {
+  if (resource.id === "audioguys-music-catalog-portal") {
     card.addEventListener("click", (event) => {
       event.preventDefault();
   
       const popup = window.open(
         resource.url,
-        "seoroCatalogPortal",
+        "AudioguysMusicCatalogPortal",
         "popup,width=1440,height=900,resizable=yes,scrollbars=yes",
       );
   
