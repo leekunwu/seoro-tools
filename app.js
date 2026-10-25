@@ -106,7 +106,7 @@ const resources = [
     description: "자사 디지털 유통 카탈로그를 통합 검색하고 음원 메타데이터를 빠르게 조회하는 내부 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
-    url: "https://script.google.com/a/macros/audioguyrecords.com/s/AKfycbzY8VuNViIpHGGXfzsElD4rCZS17dJuaClwkUQXuMtaHvkSfhBlok3ysJF6peI7O2-3/exec",
+    url: "https://script.google.com/a/macros/audioguyrecords.com/s/AKfycbwZksaHH38vLrTF5PP1Qlv8BbvZy1mCzFS5e6nzC8TwyhBeNjcQ7DJEeoHGZe6kA_KQ/exec",
     pinned: false,
   },
   {
