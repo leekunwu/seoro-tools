@@ -2,7 +2,8 @@ const resources = [
   {
     id: "universal-file-mapper",
     name: "Universal File Mapper",
-    icon: "folder_open",
+    label: "파일 구조 매핑",
+    glyph: "table-01",
     description: "서로 다른 파일 구조와 컬럼을 기준 형식에 맞게 매핑하는 업무용 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -12,7 +13,8 @@ const resources = [
   {
     id: "release-notes",
     name: "Release Notes",
-    icon: "article",
+    label: "Release Notes",
+    glyph: "note-01",
     description: "음악을 발매하는 팀의 알려진 이슈와 의도된 동작들",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -22,7 +24,8 @@ const resources = [
   {
     id: "multi-platform-music-search",
     name: "Multi-Platform Music Search",
-    icon: "travel_explore",
+    label: "음원 통합 검색",
+    glyph: "global-search",
     description: "하나의 키워드로 주요 음악 플랫폼의 검색 결과를 빠르게 여는 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -32,7 +35,8 @@ const resources = [
   {
     id: "nds-tracklist-parser",
     name: "NDS Tracklist Parser",
-    icon: "format_list_numbered",
+    label: "NDS 트랙리스트 정리",
+    glyph: "table-01",
     description: "복사한 트랙리스트에서 Stereo·Dolby ISRC를 분리해 표 형태로 정리하는 로컬 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -42,7 +46,8 @@ const resources = [
   {
     id: "mims-xml-normalizer",
     name: "MIMS XML Normalizer",
-    icon: "code",
+    label: "MIMS XML 정리",
+    glyph: "check-list",
     description: "MIMS XML을 트랙 단위 표로 정규화하고 QC·편집·TSV/CSV 내보내기를 지원하는 로컬 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -52,7 +57,8 @@ const resources = [
   {
     id: "digital-settlement-mapper",
     name: "Digital Settlement Mapper",
-    icon: "account_tree",
+    label: "디지털 정산 매핑",
+    glyph: "calculator",
     description: "디지털 정산 데이터를 통합 업무 형식으로 매핑하고 정리하는 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -62,7 +68,8 @@ const resources = [
   {
     id: "csv-encoding-fixer",
     name: "CSV Encoding Fixer",
-    icon: "data_object",
+    label: "CSV 인코딩 변환",
+    glyph: "file-conversion",
     description: "CSV 파일의 인코딩 문제를 확인하고 업무용 형식으로 변환하는 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -72,17 +79,19 @@ const resources = [
   {
     id: "audioguy-distribution-dashboard",
     name: "AUDIOGUY Distribution Dashboard",
-    icon: "dashboard",
+    label: "유통 대시보드",
+    glyph: "dashboard-square-01",
     description: "AUDIOGUY 유통 카탈로그 및 운영 현황 대시보드",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://sound360music.netlify.app/",
-    pinned: true,
+    pinned: false,
   },
   {
     id: "settlement-consolidator",
     name: "Settlement Consolidator",
-    icon: "account_balance_wallet",
+    label: "정산내역 취합",
+    glyph: "invoice-01",
     description: "유통사 정산 원본을 월별 정산내역서로 취합·매핑·환율 반영·내보내기",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -92,7 +101,8 @@ const resources = [
   {
     id: "gmail-draft-composer",
     name: "Gmail Draft Composer",
-    icon: "drafts",
+    label: "Gmail 초안 생성",
+    glyph: "mail-edit-01",
     description: "스프레드시트 연동 배치 초안 생성, 토큰 개인화 및 테스트 모드 지원",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -102,21 +112,34 @@ const resources = [
   {
     id: "audioguys-music-catalog-portal",
     name: "Audioguys Music Catalog Portal",
-    icon: "manage_search",
+    label: "카탈로그 포털",
+    glyph: "disc-01",
     description: "자사 디지털 유통 카탈로그를 통합 검색하고 음원 메타데이터를 빠르게 조회하는 내부 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://script.google.com/a/macros/audioguyrecords.com/s/AKfycbxhl4X2eyW60BKzZOtZMYObyeVKifS1WPrMVWIOB5qFBO6F7PQp7bHPdASSIrFe8jhq/exec",
-    pinned: false,
+    pinned: true,
   },
   {
     id: "neoklavier-operator",
     name: "NeoKlavier Operator",
-    icon: "piano",
+    label: "NeoKlavier Operator",
+    glyph: "piano",
     description: "Yamaha Disklavier 녹음을 위한 로컬 MIDI 플레이리스트 및 외부 MIDI 장치 운영 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://leekunwu.github.io/NeoKlavier-Operator/",
+    pinned: false,
+  },
+  {
+    id: "parallel-rename",
+    name: "Parallel Rename",
+    label: "파일 세트 이름 변경",
+    glyph: "file-edit",
+    description: "짝을 이루는 파일 세트의 이름을 구성하고 사본으로 저장",
+    category: "SEORO TOOLS",
+    type: "SEORO TOOL",
+    url: "https://leekunwu.github.io/parallel-rename/",
     pinned: false,
   },
   {
@@ -465,45 +488,6 @@ const categoryOrder = [
   "Other & Rights",
 ];
 
-const typeThemes = {
-  "SEORO TOOL": {
-    background: "#f1f3fb",
-    border: "#ccd5f2",
-    accent: "#405ba8",
-  },
-  DSP: {
-    background: "#f0f6f1",
-    border: "#c9ddcd",
-    accent: "#2f7d4b",
-  },
-  PARTNER: {
-    background: "#f6f1f7",
-    border: "#dfcde2",
-    accent: "#7d4f8b",
-  },
-  MARKETING: {
-    background: "#fdf6ea",
-    border: "#ead8b5",
-    accent: "#9a681f",
-  },
-  RIGHTS: {
-    background: "#f8f2ee",
-    border: "#e8d4c7",
-    accent: "#9a5b35",
-  },
-  UTILITY: {
-    background: "#f3f4f5",
-    border: "#d8dde0",
-    accent: "#55616a",
-  },
-};
-
-const defaultTheme = {
-  background: "#ffffff",
-  border: "#e2e2dc",
-  accent: "#1b1b1a",
-};
-
 const state = {
   activeCategory: "All",
   searchTerm: "",
@@ -522,36 +506,32 @@ const elements = {
   lastUpdated: document.querySelector("#last-updated"),
 };
 
-function normalizeText(value) {
-  return value.toLocaleLowerCase("ko-KR").trim();
+const categories = Object.fromEntries(categoryOrder.map((key, index) =>
+  [key, ["전체", "업무 도구", "글로벌 DSP", "국내 DSP", "유통 파트너", "아티스트·마케팅", "기타·권리"][index]]));
+const aliases = {
+  spotify: "스포티파이", "spotify-for-artists": "스포티파이 아티스트",
+  "apple-music": "애플뮤직", "apple-music-for-artists": "애플뮤직 아티스트",
+  "youtube-music": "유튜브뮤직", "fuga-catalog": "푸가", "naxos-labels": "낙소스",
+  "parallel-rename": "파일명 변경 리네임 일괄 이름 바꾸기",
+  "audioguys-music-catalog-portal": "카탈로그 포탈 오디오가이즈 뮤직",
+};
+function compact(value) {
+  return value.normalize("NFKC").toLowerCase().replace(/[\s_-]+/g, "");
 }
-
 function getFilteredResources() {
-  const keyword = normalizeText(state.searchTerm);
-
-  return resources.filter((resource) => {
-    const matchesCategory =
-      state.activeCategory === "All" || resource.category === state.activeCategory;
-
-    const searchableText = [
-      resource.name,
-      resource.description,
-      resource.category,
-      resource.type,
-    ]
-      .join(" ")
-      .toLocaleLowerCase("ko-KR");
-
-    return matchesCategory && (!keyword || searchableText.includes(keyword));
-  });
-}
-
-function applyTheme(card, type) {
-  const theme = typeThemes[type] ?? defaultTheme;
-
-  card.style.setProperty("--card-bg", theme.background);
-  card.style.setProperty("--card-border", theme.border);
-  card.style.setProperty("--card-accent", theme.accent);
+  const words = state.searchTerm.trim().toLowerCase().split(/[\s_-]+/).filter(Boolean).map(compact);
+  const ranked = [];
+  for (const item of resources) {
+    if (state.activeCategory !== "All" && item.category !== state.activeCategory) continue;
+    const names = [item.name, item.label || ""].map(compact);
+    const fields = [...names, compact(aliases[item.id] || ""), compact(item.description), compact(categories[item.category]), compact(item.category), compact(item.type)];
+    if (!words.every(word => fields.some(field => field.includes(word)))) continue;
+    const score = names.includes(compact(state.searchTerm)) ? 0 :
+      words.every(word => names.some(name => name.includes(word))) ? 1 :
+      words.every(word => fields.slice(0,3).some(field => field.includes(word))) ? 2 : 3;
+    ranked.push({item, score});
+  }
+  return ranked.sort((a,b) => a.score-b.score).map(entry => entry.item);
 }
 
 function createCard(resource) {
@@ -562,7 +542,7 @@ function createCard(resource) {
   const name = fragment.querySelector(".resource-name");
   const description = fragment.querySelector(".resource-description");
 
-  applyTheme(card, resource.type);
+
 
   card.href = resource.url;
   card.dataset.type = resource.type;
@@ -576,7 +556,7 @@ function createCard(resource) {
 
   if (resource.id === "audioguys-music-catalog-portal") {
     card.addEventListener("click", (event) => {
-      event.preventDefault();
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
   
       const popup = window.open(
         resource.url,
@@ -585,6 +565,7 @@ function createCard(resource) {
       );
   
       if (popup) {
+        event.preventDefault();
         popup.opener = null;
         popup.focus();
       }
@@ -594,28 +575,16 @@ function createCard(resource) {
   if (resource.logo) {
     logo.src = resource.logo;
     logo.hidden = false;
-
-    logo.addEventListener(
-      "error",
-      () => {
-        logo.removeAttribute("src");
-        logo.hidden = true;
-
-        if (resource.icon) {
-          icon.textContent = resource.icon;
-          icon.hidden = false;
-        }
-      },
-      { once: true },
-    );
-  } else if (resource.icon) {
-    icon.textContent = resource.icon;
-    icon.hidden = false;
+    logo.addEventListener("error", () => { logo.hidden = true; }, { once: true });
+  } else if (resource.glyph) {
+    icon.dataset.glyph = resource.glyph;
+    drawGlyph(icon);
   }
-
-  name.textContent = resource.name;
-  description.textContent = resource.description;
-
+  name.textContent = resource.label || resource.name;
+  description.textContent = resource.label && resource.label !== resource.name
+    ? resource.name : resource.label ? resource.description : "";
+  card.setAttribute("aria-label", [name.textContent, description.textContent,
+    resource.id === "audioguys-music-catalog-portal" ? "새 창에서 열기" : "새 탭에서 열기"].filter(Boolean).join(", "));
   return fragment;
 }
 
@@ -624,18 +593,14 @@ function renderFilters() {
 
   categoryOrder.forEach((category) => {
     const button = document.createElement("button");
-    const count =
-      category === "All"
-        ? resources.length
-        : resources.filter((resource) => resource.category === category).length;
-
     button.type = "button";
     button.className = "filter-button";
     button.setAttribute(
       "aria-pressed",
       String(category === state.activeCategory),
     );
-    button.textContent = `${category} (${count})`;
+    button.textContent = categories[category];
+    button.dataset.category = category;
 
     button.addEventListener("click", () => {
       state.activeCategory = category;
@@ -680,7 +645,7 @@ function createGroup(category, resourcesToRender) {
   title.className = "group-title";
   grid.className = "resource-grid";
 
-  title.textContent = category;
+  title.textContent = categories[category];
   count.className = "group-count";
   count.textContent = `${resourcesToRender.length}`;
   title.appendChild(count);
@@ -723,21 +688,15 @@ function renderGroups(resourcesToRender) {
 
 function renderSummary(resourcesToRender) {
   const count = resourcesToRender.length;
-  const category =
-    state.activeCategory === "All" ? "전체 카테고리" : state.activeCategory;
-
-  elements.resourceCount.textContent = `${count}개 항목`;
-
-  elements.summary.textContent = state.searchTerm.trim()
-    ? `"${state.searchTerm}" 검색 결과 ${count}개 · ${category}`
-    : `${category}에서 ${count}개 항목을 표시하고 있습니다.`;
+  elements.resourceCount.textContent = "";
+  elements.summary.textContent = state.searchTerm.trim() ? `${categories[state.activeCategory]} · 검색 결과 ${count}개` : "";
 }
 
 function render() {
   const filteredResources = getFilteredResources();
   const hasSearch = Boolean(state.searchTerm.trim());
 
-  renderFilters();
+  elements.filters.querySelectorAll("button").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.category === state.activeCategory)));
 
   if (hasSearch) {
     elements.quickAccessSection.hidden = true;
@@ -745,7 +704,17 @@ function render() {
     renderPinned(filteredResources);
   }
 
-  renderGroups(filteredResources);
+  if (hasSearch && filteredResources.length) {
+    const grid = document.createElement("div");
+    grid.className = "resource-grid";
+    filteredResources.forEach(item => grid.append(createCard(item)));
+    elements.resourceGroups.replaceChildren(grid);
+    elements.emptyState.hidden = true;
+  } else {
+    renderGroups(filteredResources);
+  }
+  document.querySelector("#clear").hidden = !hasSearch;
+  document.querySelector("#all-search").hidden = !hasSearch || state.activeCategory === "All";
   renderSummary(filteredResources);
 }
 
@@ -765,7 +734,7 @@ elements.search.addEventListener("input", (event) => {
 elements.search.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && event.target.value) {
     event.preventDefault();
-    resetFilters();
+    clearSearch();
   }
 });
 
@@ -782,12 +751,41 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-elements.lastUpdated.textContent = `Last updated: ${new Intl.DateTimeFormat(
-  "en-CA",
-  {
-    year: "numeric",
-    month: "2-digit",
-  },
-).format(new Date())}`;
+function clearSearch() {
+  state.searchTerm = "";
+  elements.search.value = "";
+  render();
+  elements.search.focus();
+}
+document.querySelector("#clear").onclick = clearSearch;
+document.querySelector("#reset").onclick = resetFilters;
+document.querySelector("#all-search").onclick = () => { state.activeCategory = "All"; render(); elements.search.focus(); };
 
+// Reuse the existing jsDelivr host. Only the selected Hugeicons are inserted.
+let glyphs = {};
+function drawGlyph(node) {
+  const entry = glyphs[node.dataset.glyph];
+  if (!entry) return;
+  const svg = new DOMParser().parseFromString('<svg xmlns="http://www.w3.org/2000/svg">' + entry.body + '</svg>', "image/svg+xml");
+  const target = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  target.setAttribute("viewBox","0 0 24 24");
+  for (const path of svg.querySelectorAll("path,circle,rect,line,polyline,ellipse,polygon")) {
+    const copy = document.createElementNS(target.namespaceURI,path.localName);
+    for (const attr of path.attributes) if (/^(d|fill|stroke|stroke-width|stroke-linecap|stroke-linejoin|cx|cy|r|rx|ry|x|y|width|height|x1|x2|y1|y2|points|fill-rule|clip-rule|opacity|transform)$/.test(attr.name)) copy.setAttribute(attr.name,attr.value);
+    for (const key of ["stroke","fill","stroke-width","stroke-linecap","stroke-linejoin"]) {
+      const ancestor = path.closest("["+key+"]");
+      if (ancestor) copy.setAttribute(key,ancestor.getAttribute(key));
+    }
+    target.append(copy);
+  }
+  node.replaceChildren(target);
+  node.hidden = false;
+}
+renderFilters();
 render();
+fetch("https://cdn.jsdelivr.net/npm/@iconify-json/hugeicons@1/icons.json")
+  .then(response => response.ok ? response.json() : Promise.reject())
+  .then(data => {
+    glyphs = data.icons;
+    document.querySelectorAll("[data-glyph]").forEach(drawGlyph);
+  }).catch(() => {});

@@ -699,3 +699,23 @@ button {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Audioguys Music workspace */
+:root{--color-bg:#fafafa;--color-text:#0a0a0a;--color-text-muted:#6a6a6a;--color-border:#eaeaea;--font-sans:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo",sans-serif}
+[hidden]{display:none!important}
+.brand{display:flex;align-items:center;gap:7px}.brand small{font:500 15px monospace}
+.hero{background:none;padding:24px 0 8px;border:0}.search-wrap{max-width:none;margin:0}
+.search-result-summary:empty,#resource-count:empty,.resource-description:empty{display:none}
+#clear{position:absolute;right:14px;border:0;background:#eee;border-radius:50%;width:30px;height:30px}
+#clear:not([hidden])+kbd{display:none}
+.filter-section{background:#fafafa}.resource-section{padding-top:22px}.quick-access-section{padding-bottom:16px;border:0}
+.section-heading h2{font-size:19px}.section-heading{margin-bottom:14px}
+.resource-card,.resource-card[data-type="DSP"]{background:white;color:#0a0a0a;border-color:#eaeaea}
+.resource-card:hover,.resource-card:focus-visible{background:#f3f4f3;color:#0a0a0a;border-color:#bbb;box-shadow:none}
+.resource-card:is(:hover,:focus-visible) .card-default,.card-default{visibility:visible;opacity:1;transform:none;width:100%}
+.card-copy{min-width:0;display:grid;gap:4px}
+.resource-name,.resource-card[data-type="DSP"] .resource-name{color:#0a0a0a;white-space:normal;overflow-wrap:anywhere}
+.resource-description,.resource-card:is(:hover,:focus-visible) .resource-description{position:static;color:#6a6a6a;opacity:1;visibility:visible;transform:none}
+.resource-icon svg{width:24px;height:24px;color:#222}.resource-logo{background:#333;border-radius:8px;padding:4px}
+#all-search,#reset{padding:7px 12px;background:white;border:1px solid #bbb;border-radius:6px}
+@media(max-width:640px){.brand{font-size:17px}.header-inner{flex-wrap:wrap;padding-block:10px}.header-brand-group{flex-wrap:wrap}.pinned-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pinned-grid .card-default{align-items:flex-start;flex-direction:column}.pinned-grid .resource-card{padding:12px}}
