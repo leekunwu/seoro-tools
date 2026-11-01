@@ -572,13 +572,24 @@ function createCard(resource) {
     });
   }
 
-  if (resource.logo) {
-    logo.src = resource.logo;
-    logo.hidden = false;
-    logo.addEventListener("error", () => { logo.hidden = true; }, { once: true });
-  } else if (resource.glyph) {
+  if (resource.category === "SEORO TOOLS") {
     icon.dataset.glyph = resource.glyph;
     drawGlyph(icon);
+  } else {
+    const showInitials = () => {
+      const words = resource.name.match(/[\p{L}\p{N}]+/gu) || [];
+      icon.textContent = words.slice(0, 2).map(word => Array.from(word)[0]).join("").toUpperCase();
+      icon.classList.add("service-initials");
+      icon.hidden = false;
+      logo.hidden = true;
+    };
+    if (resource.logo) {
+      logo.addEventListener("error", showInitials, { once: true });
+      logo.src = resource.logo;
+      logo.hidden = false;
+    } else {
+      showInitials();
+    }
   }
   name.textContent = resource.label || resource.name;
   description.textContent = resource.label && resource.label !== resource.name

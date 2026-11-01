@@ -435,7 +435,7 @@ button {
 
 .resource-icon svg { width: 25px; height: 25px; }
 .resource-icon svg path { stroke: currentColor; }
-.resource-icon[data-glyph="file-edit"] { color: #b94118; }
+
 .resource-logo:not([hidden]) { display: block; object-fit: contain; }
 .resource-icon[hidden], .resource-logo[hidden] { display: none; }
 
@@ -628,4 +628,35 @@ button {
 }
 @media (max-width: 420px) {
   .pinned-grid, .resource-grid { grid-template-columns: 1fr; }
+}
+
+/* Group directory */
+.resource-group {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 22px;
+  border-top: 1px solid var(--color-border);
+  padding: 19px 0 24px;
+}
+.resource-group + .resource-group { margin-top: 0; }
+.group-title { align-self: start; margin: 12px 0 0; }
+.group-count { border: 0; padding: 0; font-weight: 450; }
+.pinned-grid, .resource-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 36px;
+}
+.resource-card { padding: 9px 10px; border-radius: 8px; }
+.resource-card::after { content: "↗"; margin-left: auto; color: #888; }
+.resource-card:hover, .resource-card:focus-visible { background: rgba(79, 230, 153, .095); }
+.resource-card:hover .resource-name { text-decoration: none; }
+.service-initials { font-size: 12px; font-weight: 750; }
+.filter-button { border: 0; background: transparent; border-radius: 6px; }
+.filter-button[aria-pressed="true"] { color: #17633d; background: rgba(79, 230, 153, .12); }
+@media (max-width: 760px) {
+  .resource-group { grid-template-columns: 1fr; gap: 8px; }
+  .group-title { margin: 0; }
+}
+@media (max-width: 560px) {
+  .pinned-grid, .resource-grid { grid-template-columns: 1fr; }
+  .resource-card { align-items: center; }
 }
