@@ -3,7 +3,7 @@ const resources = [
     id: "universal-file-mapper",
     name: "Universal File Mapper",
     label: "파일 구조 매핑",
-    glyph: "table-01",
+    glyph: "workflow-square-01",
     description: "서로 다른 파일 구조와 컬럼을 기준 형식에 맞게 매핑하는 업무용 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -36,7 +36,7 @@ const resources = [
     id: "nds-tracklist-parser",
     name: "NDS Tracklist Parser",
     label: "NDS 트랙리스트 정리",
-    glyph: "table-01",
+    glyph: "list-view",
     description: "복사한 트랙리스트에서 Stereo·Dolby ISRC를 분리해 표 형태로 정리하는 로컬 도구",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
@@ -762,10 +762,40 @@ document.querySelector("#reset").onclick = resetFilters;
 document.querySelector("#all-search").onclick = () => { state.activeCategory = "All"; render(); elements.search.focus(); };
 
 // Reuse the existing jsDelivr host. Only the selected Hugeicons are inserted.
+const fallbackPaths = {
+  "workflow-square-01": "M3 3h6v7H3z M15 14h6v7h-6z M6 10v7h9",
+  "note-01": "M5 3h14v18H5z M8 8h8 M8 12h8 M8 16h5",
+  "global-search": "M15 9a6 6 0 1 1-12 0 6 6 0 0 1 12 0 M3 9h12 M9 3q-4 6 0 12 M14 14l6 6",
+  "list-view": "M3 5h2v4 M2 13q5-3 2 2l-2 3h4 M9 7h12 M9 16h12",
+  "check-list": "M8 5L3 10l5 5 M15 5l5 5-3 3 M11 17l3 3 7-7",
+  "calculator": "M5 2h14v20H5z M8 6h8 M8 11h2 M14 11h2 M8 15h2 M14 15h2 M8 19h2",
+  "file-conversion": "M4 3h12l4 4v4 M4 3v17h7 M9 13h11l-3-3 M20 17H9l3 3",
+  "dashboard-square-01": "M3 3h8v8H3z M14 3h7v5h-7z M14 11h7v10h-7z M3 14h8v7H3z",
+  "invoice-01": "M5 3l2 1 2-1 3 1 3-1 2 1 2-1v18l-3-2-4 2-4-2-3 2z M8 8h8 M8 12h6",
+  "mail-edit-01": "M3 5h18v7 M3 5v14h9 M3 6l9 7 8-7 M14 18l6-6 2 2-6 6-3 1z",
+  "disc-01": "M19 10a8 8 0 1 0-8 9 M13 10a2 2 0 1 0-4 0 2 2 0 1 0 4 0 M19 15a3 3 0 1 0-6 0 3 3 0 0 0 6 0 M18 18l4 4",
+  "piano": "M2 5h20v14H2z M7 5v8h2V5 M14 5v8h2V5 M8 13v6 M15 13v6",
+  "file-edit": "M4 3h10l4 4v3 M4 3v18h7 M8 8h5 M13 16l6-6 3 3-6 6-4 1z"
+};
 let glyphs = {};
 function drawGlyph(node) {
   const entry = glyphs[node.dataset.glyph];
-  if (!entry) return;
+  if (!entry) {
+    const ns = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    const path = document.createElementNS(ns, "path");
+    path.setAttribute("d", fallbackPaths[node.dataset.glyph]);
+    path.setAttribute("fill", "none");
+    path.setAttribute("stroke", "currentColor");
+    path.setAttribute("stroke-width", "1.6");
+    path.setAttribute("stroke-linejoin", "round");
+    path.setAttribute("stroke-linecap", "round");
+    svg.append(path);
+    node.replaceChildren(svg);
+    node.hidden = false;
+    return;
+  }
   const svg = new DOMParser().parseFromString('<svg xmlns="http://www.w3.org/2000/svg">' + entry.body + '</svg>', "image/svg+xml");
   const target = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   target.setAttribute("viewBox","0 0 24 24");

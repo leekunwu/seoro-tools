@@ -719,3 +719,26 @@ button {
 .resource-icon svg{width:24px;height:24px;color:#222}.resource-logo{background:#333;border-radius:8px;padding:4px}
 #all-search,#reset{padding:7px 12px;background:white;border:1px solid #bbb;border-radius:6px}
 @media(max-width:640px){.brand{font-size:17px}.header-inner{flex-wrap:wrap;padding-block:10px}.header-brand-group{flex-wrap:wrap}.pinned-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pinned-grid .card-default{align-items:flex-start;flex-direction:column}.pinned-grid .resource-card{padding:12px}}
+
+:root {
+  --brand-green: #4fe699;
+  --brand-orange: #f2592a;
+}
+.filter-button[aria-pressed="true"] {
+  color: var(--color-text);
+  background: var(--brand-green);
+  border-color: var(--brand-green);
+}
+.resource-search { padding-left: 16px; }
+.resource-search:focus {
+  border-color: #237449;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-green) 35%, transparent);
+}
+.resource-card .resource-icon {
+  background: color-mix(in srgb, var(--brand-green) 14%, white);
+  border-radius: 9px;
+}
+.resource-icon[data-glyph="file-edit"] {
+  background: color-mix(in srgb, var(--brand-orange) 20%, white);
+}
+.pinned-grid .resource-card { border-top: 2px solid var(--brand-green); }
