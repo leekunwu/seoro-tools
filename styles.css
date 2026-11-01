@@ -660,3 +660,19 @@ button {
   .pinned-grid, .resource-grid { grid-template-columns: 1fr; }
   .resource-card { align-items: center; }
 }
+
+/* DSP marks on the light directory background */
+.resource-logo:is(
+  [src$="/apple-music.svg"],
+  [src$="/spotify.svg"],
+  [src$="/youtube-music.svg"],
+  [src$="/tidal.svg"],
+  [src$="/amazon-music.svg"],
+  [src$="/melon.svg"],
+  [src$="/genie.svg"],
+  [src$="/bugs.svg"],
+  [src$="/vibe.svg"],
+  [src$="/flo.svg"]
+) {
+  filter: brightness(0) invert(20%);
+}
