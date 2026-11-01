@@ -41,7 +41,7 @@ const resources = [
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
     url: "https://leekunwu.github.io/NDS-Tracklist-Parser/",
-    pinned: false,
+    pinned: true,
   },
   {
     id: "mims-xml-normalizer",
@@ -393,7 +393,7 @@ const resources = [
     category: "Artist & Marketing",
     type: "MARKETING",
     url: "https://ndsscore.softr.app/",
-    pinned: true,
+    pinned: false,
   },
   {
     id: "nds-smart-url",
@@ -613,10 +613,16 @@ function renderFilters() {
   elements.filters.replaceChildren(fragment);
 }
 
-function renderPinned(resourcesToRender) {
-  const pinnedResources = resourcesToRender
-    .filter((resource) => resource.pinned)
-    .slice(0, 4);
+function renderPinned() {
+  const pinnedOrder = [
+    "multi-platform-music-search",
+    "audioguys-music-catalog-portal",
+    "nds-tracklist-parser",
+    "nds-smart-url",
+  ];
+  const pinnedResources = pinnedOrder
+    .map((id) => resources.find((resource) => resource.id === id && resource.pinned))
+    .filter(Boolean);
 
   if (pinnedResources.length === 0) {
     elements.pinnedGrid.hidden = true;
@@ -701,7 +707,7 @@ function render() {
   if (hasSearch) {
     elements.quickAccessSection.hidden = true;
   } else {
-    renderPinned(filteredResources);
+    renderPinned();
   }
 
   if (hasSearch && filteredResources.length) {
