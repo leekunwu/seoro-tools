@@ -143,6 +143,17 @@ const resources = [
     pinned: false,
   },
   {
+    id: "tone-terrain",
+    name: "Tone Terrain",
+    label: "Spotify 데이터 시각화",
+    glyph: "hexagon-01",
+    description: "Spotify 오디오 특성을 시각화하고 비교하는 인터랙티브 3D 음악 탐색 도구",
+    category: "SEORO TOOLS",
+    type: "SEORO TOOL",
+    url: "https://leekunwu.github.io/tone-terrain/",
+    pinned: false,
+  },
+  {
     id: "apple-music",
     name: "Apple Music",
     logo: "./assets/logos/apple-music.svg",
@@ -792,6 +803,7 @@ const fallbackPaths = {
   "mail-edit-01": "M3 5h18v7 M3 5v14h9 M3 6l9 7 8-7 M14 18l6-6 2 2-6 6-3 1z",
   "disc-01": "M19 10a8 8 0 1 0-8 9 M13 10a2 2 0 1 0-4 0 2 2 0 1 0 4 0 M19 15a3 3 0 1 0-6 0 3 3 0 0 0 6 0 M18 18l4 4",
   "piano": "M2 5h20v14H2z M7 5v8h2V5 M14 5v8h2V5 M8 13v6 M15 13v6",
+  "hexagon-01": "M12 2L21 7V17L12 22L3 17V7Z",
   "file-edit": "M4 3h10l4 4v3 M4 3v18h7 M8 8h5 M13 16l6-6 3 3-6 6-4 1z"
 };
 let glyphs = {};
