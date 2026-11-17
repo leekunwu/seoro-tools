@@ -84,7 +84,7 @@ const resources = [
     description: "AUDIOGUY 유통 카탈로그 및 운영 현황 대시보드",
     category: "SEORO TOOLS",
     type: "SEORO TOOL",
-    url: "https://sound360music.netlify.app/",
+    url: "https://audioguysmusic.netlify.app/",
     pinned: false,
   },
   {
